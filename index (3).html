@@ -1,0 +1,1487 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Revisão de Ciências – Módulos 19 a 22</title>
+<meta name="description" content="Revisão de Ciências, módulos 19 a 22: ossos, músculos e sistema nervoso.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bangers&family=Nunito:wght@400;600;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#DDEFFF; --dots:#b9dcff; --paper:#ffffff; --ink:#1B1F3B; --muted:#4a5075;
+  --yellow:#FFD23F; --blue:#2F6FEB; --ok:#1F9E6E; --okbg:#DDF7EC; --bad:#D6334A; --badbg:#FDE3E7;
+  --tint:rgba(47,111,235,.09); --pink:#FF5C8A;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#141833; --dots:#1f2550; --paper:#1e2346; --ink:#F2F4FF; --muted:#aab0d6;
+    --blue:#7FA8FF; --ok:#4ED3A0; --okbg:#153a33; --bad:#FF7A8C; --badbg:#3d1c29; --tint:rgba(127,168,255,.12);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#141833; --dots:#1f2550; --paper:#1e2346; --ink:#F2F4FF; --muted:#aab0d6;
+  --blue:#7FA8FF; --ok:#4ED3A0; --okbg:#153a33; --bad:#FF7A8C; --badbg:#3d1c29; --tint:rgba(127,168,255,.12);
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{
+  margin:0;min-height:100%;
+  background-color:var(--bg);
+  color:var(--ink);font-family:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+  font-size:17px;line-height:1.55;
+}
+.wrap{max-width:780px;margin:0 auto;padding:20px 16px 48px}
+h1{font-family:"Bangers",Impact,"Arial Black",sans-serif;font-weight:400;letter-spacing:1.5px;font-size:clamp(2.2rem,9vw,3.2rem);line-height:1;margin:6px 0;text-shadow:3px 3px 0 var(--yellow)}
+/* ===== IDENTIDADE · Profª Ana Clara — início ===== */
+:root{
+  --pac-board:#1f4d3a; --pac-board-hi:#2c6b52; --pac-board-lo:#183c2d;
+  --pac-wood:#b07a3c; --pac-wood-dk:#8a5d2a; --pac-outline:var(--ink,#1B1F3B);
+  --pac-chalk:#ffffff; --pac-chalk-soft:rgba(244,247,242,.62); --pac-accent:#FFD23F;
+  --pac-display:"Bangers",Impact,"Arial Black",sans-serif;
+  --pac-text:"Nunito",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+.pac{margin:12px 0 20px;transform:rotate(-1deg)}
+.pac-board{position:relative;overflow:hidden;background:radial-gradient(ellipse at 30% 20%,var(--pac-board-hi) 0,var(--pac-board) 60%,var(--pac-board-lo) 100%);border:7px solid var(--pac-wood);border-radius:8px;box-shadow:inset 0 0 0 3px var(--pac-wood-dk),6px 6px 0 var(--pac-outline);padding:50px 14px;text-align:center;color:var(--pac-chalk)}
+.pac-board::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 75% 85%,rgba(255,255,255,.07),transparent 55%);pointer-events:none}
+.pac-doodle{position:absolute;font-family:var(--pac-display);color:rgba(255,255,255,.28);font-size:1.05rem;letter-spacing:1px;line-height:1.25;pointer-events:none}
+.pac-doodle.tl{top:9px;left:12px;transform:rotate(-6deg);text-align:left}
+.pac-doodle.tr{top:9px;right:12px;transform:rotate(5deg);text-align:right}
+.pac-doodle.bl{bottom:9px;left:12px;transform:rotate(4deg);text-align:left}
+.pac-doodle.br{bottom:9px;right:12px;transform:rotate(-5deg);text-align:right}
+.pac-name{position:relative;display:block;font-family:var(--pac-display);font-weight:400;font-size:clamp(2rem,10vw,3rem);letter-spacing:1.5px;line-height:1.05;color:var(--pac-chalk);text-shadow:3px 3px 0 rgba(0,0,0,.35)}
+.pac-ord{font-size:.55em;vertical-align:.62em;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:.14em;letter-spacing:0;margin-left:.05em}
+.pac-wa{width:1.25em;height:1.25em;flex:none;fill:currentColor}
+.pac-mini{display:inline-flex;align-items:center;gap:6px;padding:3px 14px 3px 10px;font-family:var(--pac-text);font-weight:800;font-size:.78rem;letter-spacing:1.4px;text-transform:uppercase;line-height:1.5;color:#fff;text-shadow:0 1px 0 rgba(0,0,0,.3);background:#17994A;border:2.5px solid var(--ink);border-radius:20px;box-shadow:3px 3px 0 var(--ink);text-decoration:none;transition:transform .1s ease,box-shadow .1s ease}
+.pac-mini .pac-wa{width:16px;height:16px;fill:#fff}
+.pac-mini:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink)}
+.pac-mini:active{transform:translate(2px,2px);box-shadow:1px 1px 0 var(--ink)}
+.pac-mini:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.pac-tray{position:relative;height:13px;background:linear-gradient(#c58d4a,#9a6a32);border:3px solid var(--pac-outline);border-radius:3px;margin:-3px 18px 0;box-shadow:3px 3px 0 var(--pac-outline)}
+.pac-tray i{position:absolute;bottom:100%;height:8px;border:2px solid var(--pac-outline);border-radius:2px;margin-bottom:-1px}
+.pac-tray .c1{left:20px;width:28px;background:#fff}
+.pac-tray .c2{left:56px;width:22px;background:var(--pac-accent)}
+.pac-tray .er{right:22px;width:44px;height:13px;background:linear-gradient(#e8d9b5 55%,#3b3b3b 55%)}
+.pac-plate{display:inline-flex;align-items:center;max-width:100%;margin:2px 0 10px;padding:4px 14px;background:var(--pac-board);color:var(--pac-chalk);border:4px solid var(--pac-wood);border-radius:6px;box-shadow:3px 3px 0 var(--pac-outline);transform:rotate(-1deg);font-family:var(--pac-display);font-size:1.1rem;letter-spacing:1px;line-height:1.2}
+.pac-sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+/* ===== IDENTIDADE — fim ===== */
+.sub{color:var(--muted);margin:0 0 20px;font-weight:600}
+.panel{background:var(--paper);border:3px solid var(--ink);border-radius:6px;box-shadow:6px 6px 0 var(--ink);padding:20px 18px}
+.grid{display:grid;gap:22px}
+.mod{display:flex;gap:14px;align-items:center;text-align:left;width:100%;font:inherit;color:var(--ink);background:var(--paper);border:3px solid var(--c,var(--ink));border-radius:6px;box-shadow:8px 8px 0 var(--c,var(--ink)),10px 14px 18px rgba(20,24,51,.24);padding:14px;cursor:pointer;transition:transform .08s ease, box-shadow .08s ease}
+.mod:hover{transform:translate(-2px,-2px);box-shadow:11px 11px 0 var(--c,var(--ink)),14px 18px 22px rgba(20,24,51,.28)}
+.mod:focus-visible,.btn:focus-visible,.opt:focus-visible,.tab:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.badge{flex:none;width:58px;height:58px;display:grid;place-items:center;border:3px solid var(--ink);border-radius:50%;font-family:"Bangers",Impact,sans-serif;font-size:1.4rem;color:#1B1F3B}
+.mod h2{margin:0;font-size:1.08rem;line-height:1.25}
+.mod p{margin:3px 0 0;color:var(--muted);font-size:.92rem}
+.best{font-weight:800;color:var(--ok)}
+.back{background:none;border:0;font:inherit;font-weight:800;color:var(--blue);cursor:pointer;padding:6px 0;margin-bottom:6px}
+.tabs{display:flex;gap:8px;margin:14px 0 18px}
+.tab{flex:1;padding:10px;font:inherit;font-weight:800;border:3px solid var(--ink);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer}
+.tab[aria-selected="true"]{background:var(--yellow);color:#1B1F3B;box-shadow:3px 3px 0 var(--ink)}
+.study h3{font-family:"Bangers",Impact,sans-serif;font-weight:400;letter-spacing:1px;font-size:1.5rem;margin:24px 0 6px;line-height:1.1}
+.study h3:first-child{margin-top:0}
+.study p{margin:0 0 10px}
+.study ul{margin:0 0 12px;padding-left:20px}
+.study li{margin-bottom:5px}
+.tbl{overflow-x:auto;margin:6px 0 14px}
+.tbl table{border-collapse:collapse;width:100%;min-width:300px;font-size:.95rem}
+.tbl th,.tbl td{border:2px solid var(--ink);padding:7px 9px;text-align:left;vertical-align:top}
+.tbl th{background:var(--yellow);color:#1B1F3B}
+.box{border-left:5px solid var(--blue);background:var(--tint);padding:10px 12px;border-radius:0 6px 6px 0;margin:8px 0 14px}
+.trick{border:2px dashed var(--ink);border-radius:6px;padding:10px 12px;margin:8px 0 14px}
+.book{display:inline-block;font-size:.85rem;font-weight:800;border:2px solid var(--ink);border-radius:20px;padding:1px 10px;margin:0 0 10px;background:var(--tint)}
+.balloons{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin:8px 0 14px}
+.balloons figure{margin:0;border:2px solid var(--ink);border-radius:6px;padding:8px;text-align:center;background:var(--paper)}
+.balloons svg{width:100%;height:auto;max-width:130px;display:block;margin:0 auto 4px}
+.balloons figcaption{font-size:.88rem;font-weight:800;line-height:1.25}
+.balloons figcaption span{display:block;font-weight:600;color:var(--muted)}
+.vs{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:8px 0 14px}
+.vs div{border:3px solid var(--ink);border-radius:6px;padding:12px;text-align:center}
+.vs .big{font-family:"Bangers",Impact,sans-serif;font-size:1.7rem;letter-spacing:1px;line-height:1.1;display:block;margin:4px 0}
+.progress{display:flex;gap:4px;margin-bottom:14px}
+.progress span{flex:1;height:10px;border:2px solid var(--ink);border-radius:3px}
+.progress .ok{background:var(--ok)} .progress .bad{background:var(--bad)} .progress .now{background:var(--yellow)}
+.qnum{display:inline-block;font-family:"Bangers",Impact,sans-serif;font-size:1.35rem;letter-spacing:1px;background:var(--yellow);color:#1B1F3B;border:2px solid var(--ink);padding:0 10px;border-radius:4px;transform:rotate(-2deg);margin:0 8px 10px 0}
+.q{font-size:1.08rem;font-weight:800;margin:4px 0 12px}
+.excerpt{border-left:5px solid var(--blue);padding:8px 12px;margin:0 0 14px;background:var(--tint);border-radius:0 6px 6px 0;font-style:italic}
+.opts{display:grid;gap:10px}
+.opt{display:flex;gap:10px;align-items:flex-start;text-align:left;width:100%;padding:12px 14px;font:inherit;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:6px;cursor:pointer;box-shadow:3px 3px 0 var(--ink);transition:transform .08s ease}
+.opt:hover:not(:disabled){transform:translate(-1px,-1px)}
+.opt .l{font-weight:800;min-width:1.4em}
+.opt:disabled{cursor:default}
+.opt.right{background:var(--okbg);border-color:var(--ok);box-shadow:3px 3px 0 var(--ok)}
+.opt.wrong{background:var(--badbg);border-color:var(--bad);box-shadow:3px 3px 0 var(--bad)}
+.balloon{position:relative;margin-top:22px;padding:14px 16px;border:3px solid var(--ink);border-radius:22px;background:var(--paper);font-weight:600}
+.balloon::before{content:"";position:absolute;top:-16px;left:34px;border:14px solid transparent;border-bottom-color:var(--ink);border-top:0}
+.balloon::after{content:"";position:absolute;top:-10px;left:38px;border:10px solid transparent;border-bottom-color:var(--paper);border-top:0}
+.balloon .tag{font-family:"Bangers",Impact,sans-serif;font-size:1.5rem;letter-spacing:1px;display:block;line-height:1.1;margin-bottom:4px}
+.balloon.ok .tag{color:var(--ok)} .balloon.bad .tag{color:var(--bad)}
+.btn{margin-top:18px;width:100%;padding:14px;font:inherit;font-weight:800;font-size:1.05rem;background:var(--blue);color:#fff;border:3px solid var(--ink);border-radius:6px;cursor:pointer;box-shadow:4px 4px 0 var(--ink)}
+.btn.alt{background:var(--paper);color:var(--ink)}
+.score{font-family:"Bangers",Impact,sans-serif;font-size:clamp(4rem,20vw,6rem);line-height:1;margin:6px 0;letter-spacing:2px}
+.review{margin-top:12px;display:grid;gap:8px}
+.review div{padding:10px 12px;border:2px solid var(--ink);border-radius:6px;font-size:.95rem;background:var(--badbg)}
+.foot{margin-top:22px;color:var(--muted);font-size:.9rem;text-align:center}
+/* ===== JOGUINHOS ===== */
+.hud{display:flex;gap:8px;flex-wrap:wrap;margin:0 0 12px}
+.chip{border:3px solid var(--ink);border-radius:20px;padding:1px 12px;font-weight:800;font-size:.9rem;background:var(--paper)}
+.chip.hot{background:var(--yellow);color:#1B1F3B}
+.chip:empty{display:none}
+.bar{height:14px;border:3px solid var(--ink);border-radius:8px;overflow:hidden;background:var(--paper)}
+.bar i{display:block;height:100%;width:100%;background:var(--ok);transition:width .1s linear}
+.bar.low i{background:var(--bad)}
+.gcard{min-height:110px;display:grid;place-items:center;text-align:center;margin-top:14px}
+.gcard.word{font-family:"Bangers",Impact,sans-serif;font-size:clamp(2rem,10vw,3rem);letter-spacing:1px;line-height:1.1}
+.gcard.txt{font-weight:800;font-size:1.15rem;line-height:1.35}
+.ans{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:14px}
+.ans .btn{margin-top:0;font-size:1rem;padding:16px 6px}
+.btn.vt{background:var(--ok);color:#0b1020}
+.btn.vf{background:var(--bad);color:#fff}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]) .btn.vf,:root:not([data-theme="light"]) .bin.wrong{color:#0b1020}}
+:root[data-theme="dark"] .btn.vf,:root[data-theme="dark"] .bin.wrong{color:#0b1020}
+.vfb{min-height:54px;margin-top:12px;font-weight:800}
+.okm{color:var(--ok)} .badm{color:var(--bad)}
+.gballoon{max-width:240px;margin:0 auto 14px;color:var(--ink)}
+.gballoon svg,.svbtn svg{width:100%;height:auto;display:block}
+.svgrid{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.svbtn{padding:8px;border:2px solid var(--ink);border-radius:6px;background:var(--paper);color:var(--ink);cursor:pointer;box-shadow:3px 3px 0 var(--ink)}
+.svbtn:disabled{cursor:default}
+.svgrid .svbtn:last-child:nth-child(odd){grid-column:1/-1;width:50%;justify-self:center}
+.svbtn.right{background:var(--okbg);border-color:var(--ok);box-shadow:3px 3px 0 var(--ok)}
+.svbtn.wrong{background:var(--badbg);border-color:var(--bad);box-shadow:3px 3px 0 var(--bad)}
+.mem{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.mcard{min-height:96px;padding:6px;font:inherit;border:3px solid var(--ink);border-radius:8px;background:var(--blue);color:#fff;cursor:pointer;box-shadow:3px 3px 0 var(--ink);display:grid;place-items:center;text-align:center}
+.mcard .mb{font-family:"Bangers",Impact,sans-serif;font-size:2rem}
+.mcard .mf{display:none;font-weight:800;font-size:.8rem;line-height:1.2;color:var(--ink)}
+.mcard.up,.mcard.done{cursor:default}
+.mcard.up .mb,.mcard.done .mb{display:none}
+.mcard.up .mf,.mcard.done .mf{display:block}
+.mcard.up{background:var(--paper)}
+.mcard.up.term{background:var(--yellow)} .mcard.up.term .mf{color:#1B1F3B}
+.mcard.done{background:var(--okbg);border-color:var(--ok);box-shadow:3px 3px 0 var(--ok)}
+.bins{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin-top:14px}
+.bin{margin-top:0;padding:14px 6px;font-size:1rem;line-height:1.15}
+.bin small{display:block;font-weight:600;font-size:.72rem;opacity:.85}
+.bin.right{background:var(--ok);color:#0b1020}
+.bin.wrong{background:var(--bad);color:#fff}
+.fw{display:flex;flex-wrap:wrap;justify-content:center;gap:5px;margin:14px 0}
+.fl{display:inline-grid;place-items:center;width:clamp(20px,6.2vw,34px);height:clamp(34px,10vw,46px);border-bottom:4px solid var(--ink);font-family:"Bangers",Impact,sans-serif;font-size:1.7rem;line-height:1}
+.fl.miss{color:var(--bad)}
+.fk{display:grid;grid-template-columns:repeat(7,1fr);gap:6px}
+.key{padding:8px 0;font:inherit;font-weight:800;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:6px;cursor:pointer;box-shadow:2px 2px 0 var(--ink)}
+.key:disabled{cursor:default;box-shadow:none}
+.key.right{background:var(--okbg);border-color:var(--ok)}
+.key.wrong{background:var(--badbg);border-color:var(--bad);text-decoration:line-through}
+.slots{display:grid;gap:8px;margin-bottom:14px}
+.slot{border:2px dashed var(--ink);border-radius:6px;padding:8px 10px;font-size:.92rem;background:var(--tint)}
+.slot b{display:block;font-family:"Bangers",Impact,sans-serif;font-weight:400;letter-spacing:1px;font-size:1.05rem}
+.slot span{color:var(--muted)}
+.slot.full{border-style:solid;border-color:var(--ok);background:var(--okbg)}
+.slot.full span{color:var(--ink);font-weight:600}
+.cards{display:grid;gap:10px}
+.ecard{text-align:left;font:inherit;font-weight:700;color:var(--ink);background:var(--paper);border:3px solid var(--ink);border-radius:6px;box-shadow:4px 4px 0 var(--ink);padding:12px 14px;cursor:pointer}
+.ecard.used{display:none}
+@keyframes shake{0%,100%{transform:translateX(0)}20%{transform:translateX(-7px)}40%{transform:translateX(7px)}60%{transform:translateX(-5px)}80%{transform:translateX(5px)}}
+.shake{animation:shake .35s}
+@keyframes pop{0%{transform:scale(.92)}60%{transform:scale(1.04)}100%{transform:scale(1)}}
+.pop{animation:pop .25s}
+/* ===== DESIGN · tela inicial e cartões ===== */
+.ib{display:inline-block;width:1.05em;height:1.05em;vertical-align:-.17em;background:currentColor;
+  -webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5ZM12 6.5v13'/%3E%3C/svg%3E") center/contain no-repeat;
+  mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23000' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 6.5C10 5 7 4.5 3.5 5v13c3.5-.5 6.5 0 8.5 1.5 2-1.5 5-2 8.5-1.5V5C17 4.5 14 5 12 6.5ZM12 6.5v13'/%3E%3C/svg%3E") center/contain no-repeat}
+.toprow{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;margin:0 0 20px}
+.eyebrow{display:inline-block;margin:0;padding:2px 12px;font-weight:800;font-size:.72rem;letter-spacing:1.6px;text-transform:uppercase;color:var(--ink);background:var(--paper);border:2px solid var(--ink);border-radius:20px}
+.htabs{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin:18px 0 18px}
+.htab{display:flex;align-items:center;justify-content:center;gap:8px;padding:11px 10px;font:inherit;font-weight:800;color:var(--ink);background:var(--paper);border:3px solid var(--ink);border-radius:8px;cursor:pointer;transition:transform .1s ease,box-shadow .1s ease}
+.htab[aria-selected="true"]{background:var(--yellow);color:#1B1F3B;box-shadow:4px 4px 0 var(--ink);transform:translate(-2px,-2px)}
+.htab:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.htab .cnt{display:inline-grid;place-items:center;min-width:22px;height:22px;padding:0 6px;border-radius:11px;font-size:.78rem;background:var(--ink);color:var(--paper)}
+.prog{display:flex;align-items:center;gap:12px;margin:0 2px 26px;font-weight:800;font-size:.82rem;color:var(--muted)}
+.prog .track{flex:1;height:12px;border:2px solid var(--ink);border-radius:8px;background:var(--paper);overflow:hidden}
+.prog .track i{display:block;height:100%;background:var(--ok)}
+.prog b{color:var(--ink)}
+.mod{position:relative;gap:16px;padding:16px 14px 16px 16px;background:var(--paper)}
+.mod .mt{flex:1;min-width:0}
+.mod h2{font-size:1.12rem;font-weight:800;line-height:1.2}
+.badge{width:64px;height:64px;font-size:1.6rem;box-shadow:3px 3px 0 var(--ink);transform:rotate(-5deg);transition:transform .15s ease}
+.badge.sm{font-size:1.2rem}
+.mod:nth-child(even) .badge{transform:rotate(4deg)}
+.mod:hover .badge{transform:rotate(0) scale(1.07)}
+.badge svg{width:30px;height:30px;fill:none;stroke:#1B1F3B;stroke-width:2.3;stroke-linecap:round;stroke-linejoin:round}
+.pill{display:inline-block;margin-top:8px;padding:1px 10px;border:2px solid var(--ink);border-radius:20px;font-weight:800;font-size:.78rem;background:var(--okbg);color:var(--ink)}
+.go{flex:none;width:30px;height:30px;display:grid;place-items:center;border:2.5px solid var(--ink);border-radius:50%;background:var(--paper);transition:transform .15s ease}
+.go svg{width:14px;height:14px;fill:none;stroke:var(--ink);stroke-width:3;stroke-linecap:round;stroke-linejoin:round}
+.mod:hover .go{transform:translateX(3px)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.grid .mod{animation:rise .5s cubic-bezier(.2,.7,.2,1) backwards;animation-delay:calc(var(--i,0)*60ms)}
+.foot .ib{margin-right:4px}
+.hrt{width:18px;height:18px;fill:var(--bad);stroke:var(--ink);stroke-width:1.7;stroke-linejoin:round;vertical-align:-4px;margin-right:2px}
+.hrt.off{fill:none;opacity:.5}
+/* ===== RESPONSIVO · celular, tablet e computador ===== */
+.wrap.wide{max-width:1120px}
+.hero>h1{font-size:clamp(2.8rem,14vw,4rem);text-shadow:4px 4px 0 var(--yellow);margin:8px 0 12px}
+@media (min-width:820px){
+  .wrap{padding:36px 32px 64px}
+  .wide .grid{grid-template-columns:1fr 1fr;gap:30px 32px}
+  .hero{display:flex;flex-direction:column;align-items:center;text-align:center}
+  .hero>.toprow{align-self:flex-start;flex-wrap:nowrap}
+  .hero>.toprow .eyebrow,.hero>.toprow .pac-mini{white-space:nowrap;flex:none}
+  .hero>h1{font-size:5.4rem}
+  .hero>.pac{width:100%}
+  .hero>h1{margin:16px 0 44px}
+  .hero>.pac{max-width:37.5rem;margin:0 auto 52px}
+  .hero>.pac .pac-board{padding:84px 28px;border-width:10px}
+  .hero>.pac .pac-name{font-size:4.4rem}
+  .hero>.pac .pac-doodle{font-size:1.6rem}
+  .hero>.sub{font-size:1.1rem;margin:0}
+  .htabs{max-width:460px;margin:40px auto 22px}
+  .prog{max-width:520px;margin:0 auto 26px}
+  .mem{grid-template-columns:repeat(4,1fr);gap:12px}
+  .mcard{min-height:112px}
+  .mcard .mf{font-size:.95rem}
+  .fk{grid-template-columns:repeat(13,1fr)}
+  .svgrid{grid-template-columns:repeat(3,1fr)}
+}
+@media (prefers-reduced-motion: reduce){.mod,.opt,.htab,.go,.badge{transition:none}.shake,.pop,.grid .mod{animation:none}.bar i{transition:none}}
+/* ===== HISTÓRIA · extras ===== */
+.vs.three{grid-template-columns:repeat(3,1fr)}
+.vs.three .big{font-size:1.25rem}
+@media (max-width:560px){.vs.three{grid-template-columns:1fr}}
+.tl{display:grid;gap:0;margin:8px 0 14px;border-left:4px solid var(--ink);padding-left:16px}
+.tl div{position:relative;padding:6px 0 10px}
+.tl div::before{content:"";position:absolute;left:-25px;top:10px;width:14px;height:14px;border:3px solid var(--ink);border-radius:50%;background:var(--yellow)}
+.tl b{display:block;font-family:"Bangers",Impact,sans-serif;font-weight:400;letter-spacing:1px;font-size:1.25rem;line-height:1.1}
+.tl span{display:block;color:var(--ink)}
+.pyr{display:grid;justify-items:center;gap:6px;margin:8px auto 14px;max-width:420px}
+.pyr div{border:3px solid var(--ink);border-radius:6px;box-shadow:3px 3px 0 var(--ink);text-align:center;font-family:"Bangers",Impact,sans-serif;letter-spacing:1px;font-size:1.2rem;padding:4px 6px;color:#1B1F3B}
+.svbtn .svl{display:block;font-weight:800;font-size:.8rem;line-height:1.2;margin-top:4px}
+.gcard.word.long{font-size:clamp(1.3rem,5.5vw,1.9rem)}
+.bins .bin:last-child:nth-child(odd){grid-column:1/-1}
+.sec{font-family:"Bangers",Impact,sans-serif;font-weight:400;letter-spacing:1px;font-size:clamp(1.6rem,6vw,2.1rem);line-height:1.1;margin:34px 0 4px;text-shadow:2px 2px 0 var(--yellow);text-wrap:balance}
+.sec:first-of-type{margin-top:6px}
+.secsub{margin:0 0 18px;color:var(--muted);font-weight:600}
+.wide .grid.solo{grid-template-columns:1fr}
+/* ===== JOGOS DE HISTÓRIA · e modelo ===== */
+.duel{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}
+.ev{min-height:130px;display:grid;place-items:center;text-align:center;font:inherit;font-weight:800;font-size:1rem;line-height:1.3;color:var(--ink);background:var(--paper);border:3px solid var(--ink);border-radius:8px;box-shadow:4px 4px 0 var(--ink);padding:12px;cursor:pointer;transition:transform .08s ease;min-width:0}
+.ev:hover{transform:translate(-1px,-1px)}
+.ev:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.clues{list-style:none;padding:0;margin:0 0 14px;display:grid;gap:8px;counter-reset:c}
+.clues li{counter-increment:c;position:relative;border:2px solid var(--ink);border-radius:6px;padding:9px 12px 9px 46px;background:var(--tint);font-weight:700;line-height:1.35}
+.clues li::before{content:counter(c);position:absolute;left:10px;top:50%;transform:translateY(-50%);width:26px;height:26px;display:grid;place-items:center;border-radius:50%;background:var(--yellow);color:#1B1F3B;border:2px solid var(--ink);font-family:"Bangers",Impact,sans-serif;font-size:1rem}
+.clues li.hide{background:transparent;border-style:dashed;color:var(--muted);font-weight:600}
+.btn:disabled{opacity:.5;cursor:default}
+.opt.off{opacity:.55}
+.opt.off span{text-decoration:line-through}
+.fl.sp{border-bottom:0;width:12px}
+.study code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:var(--tint);border:1px solid var(--ink);border-radius:4px;padding:0 4px}
+
+
+</style>
+</head>
+<body>
+<div class="wrap" id="root"></div>
+<script>
+/* CONTEÚDO · Ciências, módulos 19 a 22 (Caderno 3): locomoção e sistema nervoso */
+const SITE={
+ id:"ciencias",
+ titulo:"Revisão de Ciências",
+ serie:"6º ano · Caderno 3",
+ doodles:["SNC","osso","reflexo","bíceps"],
+ contato:"https://wa.me/5511976280903",
+ subModulos:"Módulos 19 a 22: ossos, músculos, sistema nervoso e impulso nervoso. Cada card é um assunto, com explicação e um quiz curto.",
+ subJogos:"Treine como um cientista: estruturas, funções e caminhos do impulso nervoso.",
+ rodapeModulos:"Quando aparece “pág.”, vale abrir a apostila e olhar o esquema ou a ilustração citada.",
+ rodapeJogos:"Os joguinhos misturam os módulos 19 a 22. Errou? Sem problema: é treinando que se aprende."
+};
+const SECOES=[
+ {mod:0,t:"Comece por aqui",s:"As duplas que mais confundem na prova."},
+ {mod:19,t:"Módulo 19 · Locomoção – ossos",s:"Esqueleto, composição dos ossos e articulações. Apostila, págs. 324 a 330."},
+ {mod:20,t:"Módulo 20 · Locomoção – músculos",s:"Tecido muscular, contração e saúde do sistema locomotor. Apostila, págs. 331 a 340."},
+ {mod:21,t:"Módulo 21 · Organização do sistema nervoso",s:"SNC, SNP, encéfalo e medula espinal. Apostila, págs. 341 a 347."},
+ {mod:22,t:"Módulo 22 · Caminhos do impulso nervoso",s:"Nervos aferentes e eferentes, ato reflexo e lesões. Apostila, págs. 348 a 356."}
+];
+
+const MODS=[
+{
+ id:"conf", mod:0, tag:"!", color:"#FF9EC0",
+ title:"As duplas que mais confundem", pages:"Módulos 19 a 22 · confira antes da prova",
+ study:`
+<h3>Tendão × ligamento</h3>
+<p class="book"><i class='ib'></i> Pág. 328</p>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Tendão<span class="big">MÚSCULO → OSSO</span>liga o músculo ao osso</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Ligamento<span class="big">OSSO → OSSO</span>mantém os ossos da articulação no lugar</div>
+</div>
+<h3>SNC × SNP</h3>
+<p class="book"><i class='ib'></i> Pág. 343</p>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">SNC<span class="big">CENTRAL</span>encéfalo + medula espinal: interpreta e elabora respostas</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">SNP<span class="big">PERIFÉRICO</span>nervos + gânglios: leva e traz as informações</div>
+</div>
+<h3>Aferente × eferente</h3>
+<p class="book"><i class='ib'></i> Págs. 345 e 349</p>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Aferente<span class="big">CHEGA</span>sensitivo: leva a informação <strong>até o SNC</strong></div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Eferente<span class="big">SAI</span>motor: leva a resposta <strong>do SNC</strong> para músculos e glândulas</div>
+</div>
+<div class="trick"><strong>Truque:</strong> <strong>A</strong>ferente = <strong>A</strong>proxima do SNC. <strong>E</strong>ferente = <strong>E</strong>xecuta (sai para o músculo).</div>
+<h3>Voluntário × involuntário</h3>
+<p class="book"><i class='ib'></i> Pág. 342</p>
+<ul>
+<li><strong>Voluntário:</strong> depende da nossa vontade (andar, atravessar a rua, escrever). Músculo <strong>estriado esquelético</strong>.</li>
+<li><strong>Involuntário:</strong> acontece sem a nossa vontade (batimentos do coração, respiração, salivação, movimentos do sistema digestório, reflexos).</li>
+</ul>`,
+ quiz:[
+  {q:"O que liga o músculo ao osso?", ref:"pág. 328", o:["Tendão","Ligamento","Menisco","Cartilagem"], e:"O ligamento mantém os ossos da articulação no lugar."},
+  {q:"O que mantém os ossos de uma articulação firmes no lugar?", ref:"pág. 328", o:["Ligamentos","Tendões","Miofibrilas","Meninges"], e:"Ligamentos são cordões resistentes de tecido conjuntivo fibroso."},
+  {q:"O sistema nervoso central (SNC) é formado por:", ref:"pág. 343", o:["encéfalo e medula espinal","nervos e gânglios","cérebro e nervos cranianos","medula óssea e nervos"], e:"Nervos e gânglios formam o SNP."},
+  {q:"Um nervo que leva a informação da pele até o SNC é:", ref:"pág. 345", o:["aferente (sensitivo)","eferente (motor)","de associação","craniano obrigatoriamente"], e:"Aferente chega ao SNC."},
+  {q:"Um nervo que leva a ordem do SNC até um músculo é:", ref:"pág. 349", o:["eferente (motor)","aferente (sensitivo)","receptor","gânglio"], e:"Eferente sai do SNC e chega ao efetor."},
+  {q:"Qual é uma ação involuntária?", ref:"pág. 342", o:["os batimentos do coração","atravessar a rua","escrever","chutar uma bola"], e:"Acontece sem depender da nossa vontade."},
+  {q:"Medula óssea e medula espinal são a mesma coisa?", ref:"págs. 327 e 345", o:["Não: a óssea produz células do sangue; a espinal faz parte do SNC","Sim, as duas ficam nos ossos","Sim, as duas produzem sangue","Não: a espinal produz sangue"], e:"“Medula” quer dizer parte central de um órgão."}
+ ]
+},
+{
+ id:"c1", mod:19, tag:"19.1", color:"#FFD23F",
+ title:"Sistema locomotor e esqueleto", pages:"Axial, apendicular e proteção · págs. 324 a 327",
+ study:`
+<p class="book"><i class='ib'></i> Abertura: acessibilidade e a Lei n. 10 098/2000 (pág. 324)</p>
+<h3>Sistema locomotor</h3>
+<p class="book"><i class='ib'></i> Pág. 325</p>
+<p>É o conjunto do <strong>sistema esquelético</strong> (ossos, cartilagens, ligamentos e tendões) e do <strong>sistema muscular</strong>, com as <strong>articulações</strong>. É coordenado pelo <strong>sistema nervoso</strong>.</p>
+<h3>Funções do esqueleto</h3>
+<ul>
+<li><strong>Postura</strong> e <strong>movimentos</strong> (locomoção).</li>
+<li><strong>Proteção:</strong> o <strong>crânio</strong> protege o encéfalo; a <strong>coluna vertebral</strong> protege a medula espinal; as <strong>costelas e o esterno</strong> protegem pulmões, coração e outros órgãos.</li>
+<li><strong>Reserva de minerais</strong> (como o cálcio).</li>
+<li><strong>Produção de células do sangue</strong>, na medula óssea vermelha.</li>
+</ul>
+<h3>Axial × apendicular</h3>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Axial<span class="big">EIXO</span>crânio, coluna vertebral, esterno e costelas</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Apendicular<span class="big">MEMBROS</span>ossos dos braços e pernas e os que os prendem ao eixo</div>
+</div>
+<p>O esqueleto axial é comum aos <strong>tetrápodes</strong> (anfíbios, répteis, aves e mamíferos). O humano e o do gato têm as mesmas partes: crânio, coluna, costelas, <strong>fêmur</strong> (membro inferior/posterior) e <strong>úmero</strong> (membro superior/anterior).</p>
+<h3>Cartilagem e crescimento</h3>
+<p class="book"><i class='ib'></i> Pág. 326</p>
+<ul>
+<li><strong>Tubarões e raias</strong> têm esqueleto só de <strong>cartilagem</strong>. Os outros vertebrados têm esqueleto principalmente ósseo.</li>
+<li>Até a <strong>12ª semana</strong> de desenvolvimento, o feto humano tem esqueleto totalmente cartilaginoso.</li>
+<li>A substituição da <strong>cartilagem de crescimento</strong> por osso é o que garante o crescimento. No adulto, ela já foi substituída. Por isso a radiografia da mão ajuda a avaliar o crescimento.</li>
+</ul>`,
+ quiz:[
+  {q:"O sistema locomotor é formado por:", ref:"pág. 325", o:["esqueleto, articulações e sistema muscular","apenas ossos","nervos e músculos","coração e vasos"], e:"E é coordenado pelo sistema nervoso."},
+  {q:"Qual destes faz parte do esqueleto AXIAL?", ref:"pág. 325", o:["costelas","fêmur","úmero","ossos da mão"], e:"Axial: crânio, coluna, esterno e costelas."},
+  {q:"Os ossos dos braços e das pernas formam o esqueleto:", ref:"pág. 325", o:["apendicular","axial","cartilaginoso","craniano"], e:"Apendicular = membros."},
+  {q:"A coluna vertebral protege:", ref:"pág. 325", o:["a medula espinal","o coração","os pulmões","o estômago"], e:"O crânio protege o encéfalo."},
+  {q:"Quais animais têm esqueleto exclusivamente cartilaginoso?", ref:"pág. 326", o:["tubarões e raias","gatos e cães","aves","sapos"], e:"São os peixes cartilaginosos."},
+  {q:"O que garante o crescimento dos ossos?", ref:"pág. 326", o:["a substituição da cartilagem de crescimento por tecido ósseo","o aumento dos tendões","o desgaste das articulações","a vitamina C"], e:"No adulto essa cartilagem já foi substituída."},
+  {q:"Sobre o sistema locomotor, a alternativa correta é:", ref:"pág. 330", o:["O crânio faz parte do esqueleto axial e protege o encéfalo.","Ele só serve para movimentar o corpo.","A coluna e os braços são do esqueleto axial.","Os ossos são feitos de tecido morto."], e:"Teste 1 da pág. 330."}
+ ]
+},
+{
+ id:"c2", mod:19, tag:"19.2", color:"#7FD3FF",
+ title:"Composição dos ossos", pages:"Cálcio, vitamina D e fraturas · págs. 327 a 329",
+ study:`
+<h3>De que é feito o osso</h3>
+<p class="book"><i class='ib'></i> Pág. 327</p>
+<p>Ossos são <strong>tecido vivo</strong>: têm <strong>células, minerais e fibras proteicas</strong>.</p>
+<div class="tbl"><table>
+<tr><th>Característica</th><th>Vem de</th></tr>
+<tr><td><strong>Dureza</strong></td><td>sais minerais, principalmente de <strong>cálcio</strong> (da alimentação)</td></tr>
+<tr><td><strong>Resistência</strong></td><td>fibras de proteína</td></tr>
+<tr><td><strong>Elasticidade</strong></td><td><strong>colágeno</strong></td></tr>
+</table></div>
+<ul>
+<li>Os ossos são uma <strong>reserva de minerais</strong> que o corpo usa quando precisa.</li>
+<li>Dentro de alguns ossos fica a <strong>medula óssea vermelha</strong>, que <strong>produz as células do sangue</strong>.</li>
+<li>Leite e derivados são boas fontes de cálcio.</li>
+</ul>
+<h3>Vitamina D</h3>
+<p class="book"><i class='ib'></i> Pág. 328</p>
+<ul>
+<li>O cálcio só é absorvido pelos ossos com a ajuda da <strong>vitamina D</strong> (calcitriol).</li>
+<li>Ela quase não vem dos alimentos: é <strong>fabricada pelo corpo</strong> a partir do colesterol, começando na <strong>pele, com a ação dos raios solares</strong>.</li>
+<li>Ajuda: caminhadas ao sol de pelo menos <strong>15 minutos</strong>, de preferência entre <strong>8 e 10 horas</strong>, depois de um café da manhã com cálcio. Atividades de baixo impacto também aumentam a absorção.</li>
+</ul>
+<h3>Fraturas</h3>
+<p class="book"><i class='ib'></i> Pág. 329</p>
+<p>Na fratura, as células do tecido ósseo entram em intensa atividade e <strong>regeneram o osso</strong>: prova de que é um tecido vivo. Outras evidências: o osso tem <strong>células (osteócitos)</strong>, com núcleo, e <strong>vasos sanguíneos</strong>.</p>
+<p>O <strong>fêmur</strong> é o osso mais longo do corpo (cerca de 50 cm em uma pessoa de 1,80 m). Tem <strong>osso compacto</strong> e <strong>osso esponjoso</strong>, que contém medula vermelha.</p>`,
+ quiz:[
+  {q:"A dureza dos ossos se deve principalmente:", ref:"pág. 327", o:["aos sais de cálcio","ao colágeno","aos tendões","à vitamina C"], e:"O colágeno dá elasticidade."},
+  {q:"A elasticidade dos ossos se deve:", ref:"pág. 327", o:["ao colágeno","ao cálcio","à medula","aos ligamentos"], e:"Cálcio = dureza; colágeno = elasticidade."},
+  {q:"Onde são produzidas as células do sangue?", ref:"pág. 327", o:["na medula óssea vermelha","na medula espinal","no coração","nos tendões"], e:"Ela fica no interior de alguns ossos."},
+  {q:"Para o cálcio ser absorvido pelos ossos, é preciso:", ref:"pág. 328", o:["vitamina D","vitamina A","colágeno","ácido lático"], e:"Também chamada de calcitriol."},
+  {q:"A produção de vitamina D começa:", ref:"pág. 328", o:["na pele, com a ação dos raios solares","no estômago, com o leite","nos ossos, sem luz","no cérebro"], e:"Por isso é bom tomar sol em horários adequados."},
+  {q:"Qual é o horário indicado para tomar sol?", ref:"pág. 328", o:["entre 8 e 10 horas da manhã","ao meio-dia","entre 12 e 15 horas","à noite"], e:"Por pelo menos 15 minutos."},
+  {q:"Que evidência mostra que o osso é um tecido vivo?", ref:"pág. 329", o:["Ele se regenera depois de uma fratura.","Ele é duro como uma rocha.","Ele não tem vasos sanguíneos.","Ele parece um fóssil."], e:"E tem células (osteócitos) e vasos sanguíneos."}
+ ]
+},
+{
+ id:"c3", mod:19, tag:"19.3", color:"#9EE6B8",
+ title:"Articulações", pages:"Fixas, móveis, cartilagem, ligamentos e tendões · pág. 328",
+ study:`
+<p class="book"><i class='ib'></i> Pág. 328</p>
+<h3>O que é</h3>
+<p><strong>Articulação</strong> é o local onde <strong>dois ossos se tocam</strong>.</p>
+<ul>
+<li><strong>Fixas:</strong> não se movem, como as dos ossos do <strong>crânio</strong>.</li>
+<li><strong>Móveis:</strong> permitem movimentos, como a do <strong>joelho</strong>.</li>
+</ul>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Bola e soquete<span class="big">GIRA</span><strong>ombro</strong>: movimento giratório do braço</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Dobradiça<span class="big">DOBRA</span><strong>joelho e cotovelo</strong>: dobram em um único plano</div>
+</div>
+<h3>Partes da articulação</h3>
+<div class="tbl"><table>
+<tr><th>Estrutura</th><th>Função</th></tr>
+<tr><td><strong>Cartilagem</strong></td><td>tecido macio e liso que <strong>diminui o atrito</strong> entre os ossos</td></tr>
+<tr><td><strong>Líquido lubrificante</strong></td><td>líquido viscoso que reduz o impacto direto nos ossos</td></tr>
+<tr><td><strong>Ligamentos</strong></td><td>mantêm os ossos da articulação <strong>no lugar</strong></td></tr>
+<tr><td><strong>Tendões</strong></td><td><strong>ligam os músculos aos ossos</strong></td></tr>
+<tr><td><strong>Meniscos</strong></td><td>cartilagens do joelho: melhor <strong>encaixe entre fêmur e tíbia</strong> e menos impacto</td></tr>
+</table></div>
+<p>Ossos do joelho: <strong>fêmur, tíbia e patela</strong>.</p>
+<div class="trick"><strong>Por que o rompimento de ligamento é grave?</strong> Sem ele, a articulação fica <strong>instável</strong>: os ossos não ficam firmes no lugar.</div>`,
+ quiz:[
+  {q:"O que é uma articulação?", ref:"pág. 328", o:["o local onde dois ossos se tocam","o local onde o músculo se prende","um tipo de músculo","o interior do osso"], e:"Pode ser fixa ou móvel."},
+  {q:"Qual é um exemplo de articulação fixa?", ref:"pág. 328", o:["entre os ossos do crânio","o joelho","o ombro","o cotovelo"], e:"O joelho é móvel."},
+  {q:"A articulação do ombro funciona como:", ref:"pág. 328", o:["bola e soquete, permitindo girar o braço","dobradiça, dobrando em um só plano","uma articulação fixa","um ligamento"], e:"Joelho e cotovelo são dobradiças."},
+  {q:"A cartilagem na articulação serve para:", ref:"pág. 328", o:["diminuir o atrito entre os ossos","ligar o músculo ao osso","produzir sangue","contrair o músculo"], e:"Sem ela, um osso desgastaria o outro."},
+  {q:"Os meniscos ficam:", ref:"pág. 328", o:["no joelho, entre o fêmur e a tíbia","no ombro","no crânio","na coluna"], e:"Melhoram o encaixe e diminuem o impacto."},
+  {q:"Sobre as articulações: I. São sempre móveis. II. Ligamentos ajudam na estabilidade. III. Cartilagens diminuem o atrito. Estão corretas:", ref:"pág. 330", o:["apenas II e III","todas","apenas I e II","apenas I e III"], e:"A I está errada: há articulações fixas."}
+ ]
+},
+{
+ id:"c4", mod:20, tag:"20.1", color:"#C9B6FF",
+ title:"Tipos de tecido muscular", pages:"Esquelético, cardíaco e liso · págs. 331 a 333",
+ study:`
+<p class="book"><i class='ib'></i> Abertura: postura ao carregar a mochila (pág. 331)</p>
+<h3>A característica principal</h3>
+<p class="book"><i class='ib'></i> Pág. 332</p>
+<p>As células do tecido muscular têm <strong>capacidade de contração</strong>, o que possibilita o movimento.</p>
+<div class="tbl"><table>
+<tr><th>Tipo</th><th>Aparência</th><th>Onde</th><th>Contração</th></tr>
+<tr><td><strong>Estriado esquelético</strong></td><td>com estrias; células longas, cilíndricas, com <strong>vários núcleos</strong></td><td>músculos ligados ao esqueleto</td><td>rápida e <strong>voluntária</strong></td></tr>
+<tr><td><strong>Estriado cardíaco</strong></td><td>com estrias</td><td><strong>coração</strong></td><td><strong>involuntária</strong></td></tr>
+<tr><td><strong>Não estriado (liso)</strong></td><td>sem estrias; células em forma de <strong>fuso</strong></td><td>órgãos internos, como o <strong>sistema digestório</strong></td><td><strong>involuntária</strong></td></tr>
+</table></div>
+<ul>
+<li>O músculo esquelético recebe <strong>impulsos elétricos do sistema nervoso</strong>, que provocam a contração.</li>
+<li>Os músculos esqueléticos são cerca de <strong>40% da nossa massa corporal</strong>.</li>
+</ul>
+<div class="trick"><strong>Exemplo da apostila:</strong> o <strong>peito de frango</strong> é músculo <strong>estriado esquelético</strong> (movimenta as asas). A <strong>moela</strong> é parte do estômago: músculo <strong>liso</strong>.</div>`,
+ quiz:[
+  {q:"A principal característica das células musculares é:", ref:"pág. 332", o:["a capacidade de contração","produzir sangue","conduzir impulsos até o cérebro","armazenar cálcio"], e:"É o que permite o movimento."},
+  {q:"Quantos tipos de tecido muscular existem no corpo humano?", ref:"pág. 332", o:["três","dois","quatro","um"], e:"Estriado esquelético, estriado cardíaco e não estriado (liso)."},
+  {q:"O músculo estriado esquelético tem contração:", ref:"pág. 332", o:["rápida e voluntária","lenta e involuntária","só durante o sono","sem estímulo nervoso"], e:"Está sob o controle da nossa vontade."},
+  {q:"O músculo do coração é:", ref:"pág. 349", o:["estriado cardíaco","liso","estriado esquelético","cartilaginoso"], e:"Tem estrias, mas a contração é involuntária."},
+  {q:"As células do músculo liso têm forma de:", ref:"pág. 332", o:["fuso, sem estrias","cilindro, com estrias e vários núcleos","estrela","bola"], e:"Por isso é chamado de não estriado."},
+  {q:"A moela do frango, parte do estômago, é formada por músculo:", ref:"pág. 340", o:["liso (não estriado)","estriado esquelético","estriado cardíaco","ósseo"], e:"Os músculos do sistema digestório são lisos."}
+ ]
+},
+{
+ id:"c5", mod:20, tag:"20.2", color:"#FFC98A",
+ title:"Organização e energia do músculo", pages:"Feixe, fibra, miofibrila e miômero · págs. 333 e 334",
+ study:`
+<h3>Do maior para o menor</h3>
+<p class="book"><i class='ib'></i> Pág. 333</p>
+<div class="tl">
+<p><strong>Músculo</strong> → <strong>feixe muscular</strong> → <strong>fibra muscular</strong> (= miócito, a célula) → <strong>miofibrila</strong> → <strong>miômero</strong> (ou sarcômero)</p>
+</div>
+<ul>
+<li>As <strong>fibras musculares</strong> são células longas e cilíndricas, com vários núcleos.</li>
+<li>As <strong>miofibrilas</strong> são filamentos de proteína dentro da célula, organizados em <strong>miômeros</strong>, as unidades que se contraem. O arranjo repetido dessas proteínas dá a aparência <strong>estriada</strong>.</li>
+<li>O <strong>tendão</strong> prende o músculo ao osso. Os <strong>vasos sanguíneos</strong> levam nutrientes e gás oxigênio e retiram resíduos.</li>
+</ul>
+<h3>Energia para contrair</h3>
+<p class="book"><i class='ib'></i> Págs. 333 e 334</p>
+<ul>
+<li>Nutrientes (da digestão) + gás oxigênio (da respiração) → energia, produzida na <strong>mitocôndria</strong> pela <strong>respiração celular</strong>.</li>
+<li>Sem oxigênio, o músculo faz <strong>fermentação lática</strong>: libera <strong>menos energia</strong>, é menos eficiente.</li>
+<li>A dor depois do exercício <strong>não vem do ácido lático</strong> (ele é transformado no fígado). Vem de <strong>microlesões nas miofibrilas</strong>, que estimulam a fabricação de mais miofibrilas.</li>
+</ul>
+<h3>Músculos e “bombas”</h3>
+<ul>
+<li>Exercício aumenta o <strong>número de miofibrilas</strong> e o diâmetro das fibras, <strong>não o número de células</strong>. Isso é a <strong>hipertrofia</strong>.</li>
+<li>Também aumenta a rede de <strong>vasos sanguíneos</strong>: sinal de melhor condicionamento físico.</li>
+<li><strong>Esteroides anabolizantes</strong> (“bombas”) podem causar problemas nos <strong>rins e no fígado</strong>, entre outros efeitos.</li>
+</ul>`,
+ quiz:[
+  {q:"Qual é a ordem do maior para o menor?", ref:"pág. 333", o:["músculo → feixe → fibra → miofibrila → miômero","fibra → músculo → feixe → miômero","miômero → miofibrila → fibra → músculo","feixe → músculo → miofibrila → fibra"], e:"A fibra muscular é a célula."},
+  {q:"A fibra muscular também é chamada de:", ref:"pág. 333", o:["miócito","miômero","tendão","neurônio"], e:"É a célula do músculo."},
+  {q:"Em qual organela é produzida a energia para a contração?", ref:"pág. 334", o:["mitocôndria","núcleo","miofibrila","tendão"], e:"Pela respiração celular."},
+  {q:"Na falta de gás oxigênio, o músculo pode fazer:", ref:"pág. 334", o:["fermentação lática, que libera menos energia","respiração celular mais forte","fotossíntese","digestão"], e:"É menos eficiente."},
+  {q:"Hoje se sabe que a dor muscular após o exercício vem de:", ref:"pág. 334", o:["microlesões nas miofibrilas","acúmulo de ácido lático","falta de cálcio","quebra dos ossos"], e:"O ácido lático é transformado no fígado."},
+  {q:"Exercícios como levantar peso aumentam:", ref:"pág. 334", o:["o número de miofibrilas, não o de células","o número de células musculares","o número de ossos","o número de tendões"], e:"Isso é a hipertrofia muscular."},
+  {q:"Mais vasos sanguíneos por fibra muscular depois do treino indicam:", ref:"pág. 334", o:["melhora do condicionamento físico","doença muscular","falta de exercício","fermentação"], e:"Chega mais oxigênio e nutrientes ao músculo."}
+ ]
+},
+{
+ id:"c6", mod:20, tag:"20.3", color:"#FFA7A7",
+ title:"Ação antagônica e saúde do sistema locomotor", pages:"Bíceps × tríceps e postura · págs. 335 a 339",
+ study:`
+<h3>Músculos trabalham em pares</h3>
+<p class="book"><i class='ib'></i> Págs. 335 e 336</p>
+<p>O músculo <strong>só consegue puxar</strong> o osso (pelo tendão) quando contrai. Para voltar, <strong>outro músculo</strong> precisa puxar. Por isso a maioria trabalha em <strong>pares antagônicos</strong>: <strong>enquanto um contrai, o outro relaxa</strong>.</p>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Dobrar o braço<span class="big">FLEXÃO</span><strong>bíceps contrai</strong>, tríceps relaxa (distende)</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Esticar o braço<span class="big">EXTENSÃO</span><strong>tríceps contrai</strong>, bíceps relaxa</div>
+</div>
+<p>Ossos do braço: <strong>úmero</strong>; do antebraço: <strong>ulna e rádio</strong>. O mesmo acontece com os músculos da coxa na extensão e na flexão da perna.</p>
+<h3>Cuidados com o sistema locomotor</h3>
+<p class="book"><i class='ib'></i> Págs. 336 a 338</p>
+<ul>
+<li><strong>Capacete e joelheiras</strong> no skate e na bicicleta; <strong>caneleiras</strong> no futebol.</li>
+<li><strong>Calçados adequados</strong> para preservar as articulações.</li>
+<li><strong>Mochila nas costas, com as duas alças</strong>, bem ajustada. Bolsa de uma alça: atravessada no corpo. Malas com rodinhas são boa opção.</li>
+<li>Peso da mochila: até <strong>10% da sua massa corporal</strong>.</li>
+<li>Para levantar algo pesado: <strong>agache</strong>, sem forçar a coluna.</li>
+<li>Para sentar: <strong>costas apoiadas no encosto e pés no chão</strong>.</li>
+<li><strong>Exercícios regulares</strong>, mesmo caminhadas leves, fortalecem músculos e ossos.</li>
+</ul>`,
+ quiz:[
+  {q:"Ao dobrar o braço (flexão), o que acontece?", ref:"pág. 336", o:["O bíceps contrai e o tríceps relaxa.","O tríceps contrai e o bíceps relaxa.","Os dois contraem.","Os dois relaxam."], e:"Na extensão é o contrário."},
+  {q:"Ação antagônica significa que:", ref:"pág. 336", o:["enquanto um músculo contrai, o seu par relaxa","os ossos puxam os músculos","os músculos agem sozinhos","os tendões se contraem"], e:"Teste 2 da pág. 340."},
+  {q:"Por que o osso precisa de outro músculo para voltar à posição inicial?", ref:"pág. 336", o:["O músculo só consegue puxar, não empurrar.","O osso é mole.","O tendão empurra o osso.","O cérebro empurra o osso."], e:"Por isso os músculos trabalham em pares."},
+  {q:"Qual é a forma correta de carregar a mochila?", ref:"pág. 337", o:["nas costas, com as duas alças, bem ajustada","pendurada em um ombro só","pendurada bem baixa","na mão, com muito peso"], e:"Mala com rodinhas também é uma boa opção."},
+  {q:"Qual é o peso razoável para o material escolar?", ref:"pág. 339", o:["até 10% da massa corporal","até 50% da massa corporal","o mesmo peso do aluno","qualquer peso"], e:"Mais do que isso pode lesionar."},
+  {q:"Para levantar um objeto pesado do chão, o correto é:", ref:"pág. 338", o:["agachar, sem forçar a coluna","curvar as costas com as pernas esticadas","puxar com um braço só","pular"], e:"Evita carga na coluna e nos músculos das costas."}
+ ]
+},
+{
+ id:"c7", mod:21, tag:"21.1", color:"#FFD23F",
+ title:"Organização do sistema nervoso", pages:"SNC, SNP e ações voluntárias · págs. 341 a 343",
+ study:`
+<p class="book"><i class='ib'></i> Abertura: atravessar a Avenida Paulista na faixa (pág. 341)</p>
+<h3>Para que serve</h3>
+<p class="book"><i class='ib'></i> Pág. 342</p>
+<p>O sistema nervoso <strong>coordena</strong> todas as atividades do organismo, o tempo todo, até dormindo (batimentos do coração, respiração, digestão). O outro sistema de coordenação é o <strong>endócrino</strong> (glândulas e hormônios).</p>
+<p>Os <strong>órgãos dos sentidos</strong> captam os <strong>estímulos</strong> do ambiente → o sistema nervoso <strong>interpreta</strong> → e <strong>comanda uma resposta</strong>.</p>
+<h3>Divisão</h3>
+<p class="book"><i class='ib'></i> Pág. 343</p>
+<div class="tbl"><table>
+<tr><th></th><th>SNC (central)</th><th>SNP (periférico)</th></tr>
+<tr><td>Formado por</td><td><strong>encéfalo</strong> (cérebro, hipotálamo, cerebelo e tronco encefálico) e <strong>medula espinal</strong></td><td><strong>nervos</strong> e <strong>gânglios nervosos</strong></td></tr>
+<tr><td>Função</td><td>processa as informações e elabora as respostas</td><td>leva estímulos ao SNC e respostas aos órgãos</td></tr>
+<tr><td>Proteção</td><td>encéfalo: <strong>crânio</strong>; medula: <strong>vértebras</strong></td><td>—</td></tr>
+</table></div>
+<div class="trick"><strong>Números que caem:</strong> <strong>12 pares</strong> de nervos <strong>cranianos</strong> (saem do encéfalo) e <strong>31 pares</strong> de nervos <strong>raquidianos</strong> ou espinais (saem da medula).</div>
+<h3>Voluntário × involuntário</h3>
+<ul>
+<li><strong>Voluntárias:</strong> decidir andar e atravessar a rua, pedalar, escrever.</li>
+<li><strong>Involuntárias:</strong> batimentos do coração, respiração, salivação, movimentos dos músculos lisos do sistema digestório.</li>
+</ul>`,
+ quiz:[
+  {q:"Quais sistemas coordenam o funcionamento do corpo?", ref:"pág. 342", o:["nervoso e endócrino","locomotor e digestório","respiratório e circulatório","esquelético e muscular"], e:"O endócrino será estudado em anos posteriores."},
+  {q:"O SNP é formado por:", ref:"pág. 343", o:["nervos e gânglios nervosos","encéfalo e medula espinal","cérebro e cerebelo","ossos e músculos"], e:"SNC = encéfalo + medula espinal."},
+  {q:"Quantos pares de nervos cranianos existem?", ref:"pág. 343", o:["12","31","24","43"], e:"Eles partem do encéfalo."},
+  {q:"Quantos pares de nervos raquidianos (espinais) existem?", ref:"pág. 343", o:["31","12","33","10"], e:"Eles partem da medula espinal."},
+  {q:"Onde fica a medula espinal?", ref:"pág. 343", o:["em um canal no interior das vértebras","dentro do crânio","dentro dos ossos longos","no tórax"], e:"A coluna vertebral a protege."},
+  {q:"Qual destas é uma ação voluntária?", ref:"pág. 342", o:["decidir atravessar a rua","o batimento do coração","a salivação","a respiração durante o sono"], e:"Depende da nossa vontade."}
+ ]
+},
+{
+ id:"c8", mod:21, tag:"21.2", color:"#7FD3FF",
+ title:"Encéfalo, medula e nervos", pages:"Cérebro, cerebelo, hipotálamo e tronco · págs. 344 a 346",
+ study:`
+<h3>As partes do encéfalo</h3>
+<p class="book"><i class='ib'></i> Pág. 344</p>
+<div class="tbl"><table>
+<tr><th>Parte</th><th>Função</th></tr>
+<tr><td><strong>Cérebro</strong></td><td>a <strong>maior parte</strong> do encéfalo: <strong>interpreta os estímulos</strong>, raciocínio, linguagem, memória, controle voluntário dos músculos. Camada externa cinzenta: <strong>córtex cerebral</strong></td></tr>
+<tr><td><strong>Hipotálamo</strong></td><td>controle do <strong>balanço hídrico</strong> (água), do <strong>apetite</strong> e da <strong>temperatura</strong> do corpo; emoções e hormônios</td></tr>
+<tr><td><strong>Cerebelo</strong></td><td><strong>equilíbrio</strong>, coordenação e <strong>precisão dos movimentos</strong> (como escrever)</td></tr>
+<tr><td><strong>Tronco encefálico</strong></td><td>controle involuntário da <strong>respiração</strong> e dos <strong>batimentos cardíacos</strong>; salivação e deglutição</td></tr>
+</table></div>
+<div class="trick"><strong>Truque:</strong> cere<strong>BELO</strong> é o “bailarino”: equilíbrio e precisão. <strong>Tronco</strong> é o “piloto automático”: coração e respiração.</div>
+<h3>Proteção do encéfalo</h3>
+<p><strong>Caixa craniana</strong> (ossos) → <strong>meninges</strong> (tecidos que protegem contra impactos e microrganismos) → <strong>líquido cerebrospinal</strong> ou <strong>líquor</strong>, que amortece pancadas. Meninges e líquor envolvem todo o SNC.</p>
+<h3>Medula espinal</h3>
+<p class="book"><i class='ib'></i> Pág. 345</p>
+<ul>
+<li>Cordão que parte do tronco encefálico e passa por dentro das <strong>vértebras</strong>. Entre elas há <strong>discos de cartilagem</strong> que diminuem atrito e absorvem impactos.</li>
+<li>Conduz informações <strong>nos dois sentidos</strong> (do encéfalo para os órgãos e dos órgãos para o encéfalo) e é responsável pelos <strong>atos reflexos</strong>.</li>
+</ul>
+<h3>Tipos de nervo</h3>
+<ul>
+<li><strong>Sensitivos (aferentes):</strong> levam informações <strong>até o SNC</strong>.</li>
+<li><strong>Motores (eferentes):</strong> levam respostas <strong>do SNC</strong> para músculos ou glândulas.</li>
+<li><strong>Mistos:</strong> fazem as duas coisas. Os <strong>raquidianos são todos mistos</strong>; os cranianos podem ser sensitivos, motores ou mistos.</li>
+</ul>`,
+ quiz:[
+  {q:"Qual parte representa a maior parte do encéfalo?", ref:"pág. 344", o:["cérebro","cerebelo","hipotálamo","tronco encefálico"], e:"Ele interpreta os estímulos."},
+  {q:"Um paciente perdeu o equilíbrio e tem dificuldade para escrever. O problema deve estar no:", ref:"pág. 346", o:["cerebelo","cérebro","hipotálamo","tronco encefálico"], e:"O cerebelo cuida do equilíbrio e dos movimentos precisos."},
+  {q:"Qual parte controla a temperatura do corpo e o balanço de água?", ref:"pág. 344", o:["hipotálamo","cerebelo","medula espinal","tronco encefálico"], e:"Também participa do controle do apetite."},
+  {q:"Qual parte controla automaticamente a respiração e os batimentos cardíacos?", ref:"pág. 344", o:["tronco encefálico","cérebro","cerebelo","hipotálamo"], e:"É controle involuntário."},
+  {q:"O que protege o encéfalo, além do crânio?", ref:"pág. 344", o:["as meninges e o líquor","os meniscos","os tendões","a medula óssea"], e:"Eles amortecem impactos."},
+  {q:"Os nervos raquidianos são:", ref:"pág. 345", o:["todos mistos","todos sensitivos","todos motores","parte do SNC"], e:"Os cranianos podem ser sensitivos, motores ou mistos."},
+  {q:"A medula espinal conduz informações:", ref:"pág. 345", o:["nos dois sentidos, e também comanda reflexos","só do cérebro para os órgãos","só dos órgãos para o cérebro","só para os ossos"], e:"Ela não é só um condutor."}
+ ]
+},
+{
+ id:"c9", mod:22, tag:"22.1", color:"#9EE6B8",
+ title:"O caminho do impulso nervoso", pages:"Receptores, aferentes, eferentes e efetores · págs. 348 a 353",
+ study:`
+<p class="book"><i class='ib'></i> Abertura: equipamentos de segurança do motociclista (pág. 348)</p>
+<h3>Impulso nervoso</h3>
+<p class="book"><i class='ib'></i> Pág. 349</p>
+<p>As informações e as respostas viajam pelos nervos como <strong>pequenos sinais elétricos</strong>: os <strong>impulsos nervosos</strong>.</p>
+<h3>O caminho</h3>
+<div class="tl">
+<p><strong>Estímulo</strong> → <strong>receptor</strong> (órgão que capta) → <strong>nervo sensitivo (aferente)</strong> → <strong>SNC</strong> (elabora a resposta) → <strong>nervo motor (eferente)</strong> → <strong>efetor</strong> (órgão que executa)</p>
+</div>
+<ul>
+<li><strong>Receptores:</strong> órgãos dos sentidos, pele, articulações, músculos.</li>
+<li><strong>Efetores:</strong> músculos (esquelético, liso, cardíaco), glândulas, vísceras.</li>
+</ul>
+<h3>Teste da régua</h3>
+<p class="book"><i class='ib'></i> Págs. 349 a 352</p>
+<ul>
+<li>Mede-se a <strong>distância</strong> que a régua cai: quanto menor, mais rápida a reação.</li>
+<li>Com os olhos abertos, o estímulo é <strong>visual</strong>: olhos → nervo sensitivo → cérebro → nervo motor → músculos dos dedos.</li>
+<li>Com os olhos vendados (“já!”), o estímulo é <strong>auditivo</strong>.</li>
+<li>A velocidade de reação <strong>pode ser treinada</strong>, como fazem os goleiros.</li>
+</ul>`,
+ quiz:[
+  {q:"Como as informações percorrem os nervos?", ref:"pág. 349", o:["como pequenos sinais elétricos (impulsos nervosos)","como hormônios no sangue","como sons","como gotas de líquor"], e:"São os impulsos nervosos."},
+  {q:"Os órgãos que captam os estímulos são chamados de:", ref:"pág. 349", o:["receptores","efetores","gânglios","tendões"], e:"Os efetores executam a resposta."},
+  {q:"Os órgãos que executam a resposta (músculos, glândulas) são chamados de:", ref:"pág. 349", o:["efetores","receptores","aferentes","meninges"], e:"Recebem a ordem por nervos eferentes."},
+  {q:"Qual é a sequência correta do impulso?", ref:"pág. 353", o:["receptor → nervo sensitivo → SNC → nervo motor → efetor","efetor → nervo motor → SNC → nervo sensitivo → receptor","SNC → receptor → efetor → nervo","receptor → nervo motor → SNC → nervo sensitivo"], e:"Chega pelo aferente, sai pelo eferente."},
+  {q:"A informação de que um objeto está frio chega ao SNC por um nervo:", ref:"pág. 355", o:["aferente","eferente","motor","de associação obrigatoriamente"], e:"Aferente = sensitivo."},
+  {q:"No teste da régua com os olhos vendados, o estímulo é:", ref:"pág. 352", o:["auditivo","visual","tátil","olfativo"], e:"O colega avisa “já”."},
+  {q:"No teste da régua, uma distância menor significa:", ref:"pág. 351", o:["reação mais rápida","reação mais lenta","que a régua é maior","que houve erro"], e:"A régua caiu menos antes de ser pega."}
+ ]
+},
+{
+ id:"c10", mod:22, tag:"22.2", color:"#C9B6FF",
+ title:"Ato reflexo", pages:"Arco reflexo e reflexo patelar · págs. 351 a 354",
+ study:`
+<h3>O que é</h3>
+<p class="book"><i class='ib'></i> Pág. 354</p>
+<p>No <strong>ato reflexo</strong>, o impulso <strong>não passa pelo cérebro</strong>: quem elabora a resposta é a <strong>medula espinal</strong>. A resposta é <strong>rápida e involuntária</strong>.</p>
+<h3>Arco reflexo (mão na superfície quente)</h3>
+<div class="tl">
+<p><strong>Pele</strong> capta o calor → <strong>nervo sensitivo (aferente)</strong> → <strong>medula espinal</strong> (pode haver um <strong>nervo de associação</strong>) → <strong>nervo motor (eferente)</strong> → <strong>músculo contrai</strong> e retira a mão</p>
+</div>
+<ul>
+<li>Ao mesmo tempo, outro estímulo vai ao <strong>cérebro</strong> e é interpretado como <strong>dor</strong>. A mão sai <strong>antes</strong> de sentirmos a dor.</li>
+<li><strong>Vantagem:</strong> resposta mais veloz, que protege o corpo de um dano maior.</li>
+<li>O ato reflexo <strong>passa pelo SNC</strong> (pela medula), só não passa pelo cérebro.</li>
+</ul>
+<h3>Exemplos</h3>
+<ul>
+<li><strong>Reflexo patelar:</strong> o médico bate abaixo da <strong>patela</strong> e a perna dá um chute involuntário. Alteração pode indicar lesão em um nervo ou na medula.</li>
+<li><strong>Tossir</strong> ao engasgar e <strong>espirrar</strong> com poeira: protegem as vias respiratórias.</li>
+<li>Tirar a mão de algo quente ou pontiagudo.</li>
+</ul>`,
+ quiz:[
+  {q:"No ato reflexo, quem elabora a resposta é:", ref:"pág. 354", o:["a medula espinal","o cérebro","o cerebelo","o hipotálamo"], e:"Por isso é tão rápido."},
+  {q:"“O ato reflexo não passa pelo SNC.” Essa afirmação é:", ref:"pág. 356", o:["falsa: passa pela medula espinal, que faz parte do SNC","verdadeira: não passa por nenhum órgão","verdadeira: só passa pelos ossos","falsa: passa sempre pelo cérebro"], e:"Não passa pelo cérebro, mas passa pela medula."},
+  {q:"Quando encostamos a mão em algo quente:", ref:"pág. 354", o:["retiramos a mão antes de sentir a dor","sentimos a dor e só depois retiramos a mão","não sentimos dor","o cérebro manda retirar a mão"], e:"A dor é interpretada depois, no cérebro."},
+  {q:"Qual é a vantagem do arco reflexo?", ref:"pág. 354", o:["resposta mais rápida, protegendo o corpo","resposta mais lenta e pensada","economizar energia do cérebro para pensar","produzir hormônios"], e:"Frações de segundo evitam um dano maior."},
+  {q:"Qual destes é um ato reflexo?", ref:"pág. 354", o:["espirrar quando entra poeira no nariz","escrever uma redação","decidir atravessar a rua","andar de bicicleta"], e:"Tossir e espirrar protegem as vias respiratórias."},
+  {q:"No reflexo patelar, o médico bate:", ref:"pág. 352", o:["logo abaixo da patela","sobre o crânio","no cotovelo","no tornozelo"], e:"A perna dá um chute involuntário."}
+ ]
+},
+{
+ id:"c11", mod:22, tag:"22.3", color:"#FFC98A",
+ title:"Lesões na medula e proteção", pages:"Tetraplegia, paraplegia e equipamentos · págs. 355 e 356",
+ study:`
+<p class="book"><i class='ib'></i> Págs. 355 e 356</p>
+<h3>Por que lesões na medula são tão graves</h3>
+<p>Os <strong>neurônios</strong> (células do encéfalo, da medula e dos nervos) <strong>não se reproduzem</strong>. Uma lesão na medula destrói essas células e <strong>interrompe a passagem dos impulsos</strong>: os estímulos não chegam ao cérebro, e as respostas não chegam aos órgãos.</p>
+<div class="vs">
+ <div style="background:#DDEFFF;color:#1B1F3B">Lesão no alto (cervical)<span class="big">TETRAPLEGIA</span>perde movimentos e sensações do corpo todo; pode afetar respiração e coração</div>
+ <div style="background:#FFF1C2;color:#1B1F3B">Lesão mais baixa<span class="big">PARAPLEGIA</span>perde movimentos e sensações da cintura para baixo</div>
+</div>
+<p>Regiões da coluna, de cima para baixo: <strong>cervical, torácica, lombar e sacral</strong>.</p>
+<p>Os <strong>arcos reflexos não se perdem</strong>, porque não dependem do cérebro.</p>
+<h3>Equipamentos de segurança</h3>
+<ul>
+<li><strong>Capacete</strong> (obrigatório por lei para motociclistas): protege o crânio e o <strong>encéfalo</strong>.</li>
+<li><strong>Jaqueta com placa rígida nas costas</strong>: protege a <strong>coluna vertebral</strong> e a medula espinal.</li>
+<li>Luvas e joelheiras protegem mãos e articulações.</li>
+</ul>
+<h3>Anestesia raquidiana</h3>
+<p>Aplicada entre as últimas vértebras <strong>lombares</strong>: indicada para cirurgias na <strong>parte de baixo do corpo, como as pernas</strong>.</p>
+<div class="trick"><strong>Concussão cerebral</strong> é um trauma leve no cérebro por pancadas na cabeça. Pancadas repetidas podem levar à Encefalopatia Traumática Crônica (pág. 347).</div>`,
+ quiz:[
+  {q:"Por que uma lesão na medula espinal pode ser permanente?", ref:"pág. 355", o:["Os neurônios não se reproduzem.","Os ossos não se regeneram.","A medula não tem células.","O cérebro para de funcionar."], e:"As células destruídas não são substituídas."},
+  {q:"Uma pessoa perdeu os movimentos e sensações da cintura para baixo. Isso é:", ref:"pág. 355", o:["paraplegia","tetraplegia","concussão","reflexo patelar"], e:"Lesão mais baixa na coluna."},
+  {q:"Uma lesão na região cervical pode causar:", ref:"pág. 355", o:["tetraplegia, afetando até a respiração","só perda do olfato","paraplegia apenas nos pés","nenhum efeito"], e:"É a parte mais alta da coluna."},
+  {q:"Depois de uma lesão na medula, os arcos reflexos:", ref:"pág. 355", o:["não se perdem, pois não dependem do cérebro","se perdem sempre","ficam mais lentos","passam a depender do cerebelo"], e:"A medula abaixo da lesão continua fazendo reflexos."},
+  {q:"A placa rígida na jaqueta do motociclista protege:", ref:"pág. 355", o:["a coluna vertebral e a medula espinal","o crânio","os joelhos","as mãos"], e:"O capacete protege o encéfalo."},
+  {q:"A anestesia raquidiana, aplicada entre as vértebras lombares, é indicada para cirurgias:", ref:"pág. 356", o:["nas pernas","no tórax","nos ombros e pescoço","nos braços"], e:"Age na parte de baixo do corpo."}
+ ]
+}
+];
+
+const JOGOS=[
+{
+ id:"separa", tipo:"separa", icone:"alvo", cor:"#FF9EC0",
+ titulo:"Separa Rápido", desc:"Axial ou apendicular? SNC ou SNP? Voluntário ou involuntário? Aferente ou eferente?",
+ dados:[
+  {nome:"Esqueleto axial ou apendicular?",dica:"Faz parte do eixo do corpo ou dos membros?",
+   bins:[{k:"x",label:"Axial",sub:"eixo"},{k:"p",label:"Apendicular",sub:"membros"}],
+   items:[["Crânio","x"],["Coluna vertebral","x"],["Costelas","x"],["Esterno","x"],["Mandíbula","x"],
+          ["Fêmur","p"],["Úmero","p"],["Tíbia","p"],["Ulna","p"],["Rádio","p"],["Patela","p"]]},
+  {nome:"SNC ou SNP?",dica:"Faz parte do sistema nervoso central ou periférico?",
+   bins:[{k:"c",label:"SNC",sub:"central"},{k:"p",label:"SNP",sub:"periférico"}],
+   items:[["Cérebro","c"],["Cerebelo","c"],["Hipotálamo","c"],["Tronco encefálico","c"],["Medula espinal","c"],
+          ["Nervos cranianos","p"],["Nervos raquidianos","p"],["Gânglios nervosos","p"],["Nervo sensitivo","p"],["Nervo motor","p"]]},
+  {nome:"Voluntário ou involuntário?",dica:"Depende da nossa vontade?",
+   bins:[{k:"v",label:"Voluntário"},{k:"i",label:"Involuntário"}],
+   items:[["Atravessar a rua","v"],["Escrever","v"],["Chutar a bola","v"],["Pedalar","v"],["Levantar a mão","v"],
+          ["Batimentos do coração","i"],["Salivação","i"],["Movimento do estômago","i"],["Espirrar","i"],["Reflexo patelar","i"],["Respiração durante o sono","i"]]},
+  {nome:"Aferente ou eferente?",dica:"O impulso vai para o SNC (aferente) ou sai dele (eferente)?",
+   bins:[{k:"a",label:"Aferente",sub:"sensitivo, chega"},{k:"e",label:"Eferente",sub:"motor, sai"}],
+   items:[["Leva a informação de que o objeto está frio","a"],["Leva o som do ouvido ao cérebro","a"],["Leva a dor da pele para a medula","a"],["Leva a imagem dos olhos ao cérebro","a"],
+          ["Manda o músculo da perna contrair","e"],["Leva a ordem para o coração bater","e"],["Manda a mão sair da superfície quente","e"],["Leva a ordem para uma glândula","e"]]},
+  {nome:"Qual tipo de músculo?",dica:"Estriado esquelético, estriado cardíaco ou liso?",
+   bins:[{k:"e",label:"Esquelético"},{k:"c",label:"Cardíaco"},{k:"l",label:"Liso"}],
+   items:[["Bíceps","e"],["Tríceps","e"],["Peito de frango","e"],["Contração voluntária","e"],["Células com vários núcleos, ligadas aos ossos","e"],
+          ["Coração","c"],["Estriado, mas involuntário","c"],
+          ["Moela do frango","l"],["Estômago","l"],["Células em forma de fuso","l"],["Sem estrias","l"]]}
+ ]
+},
+{
+ id:"funcao", tipo:"liga", icone:"setas", cor:"#9EE6B8",
+ titulo:"Estrutura e Função", desc:"Veja a estrutura e escolha a função certa.",
+ rodadas:8,
+ dados:{
+  rotuloA:"Estrutura", rotuloB:"Função", pergunta:"Qual é a função?",
+  pares:[
+   ["Tendão","Liga o músculo ao osso."],
+   ["Ligamento","Mantém os ossos da articulação no lugar."],
+   ["Cartilagem","Diminui o atrito entre os ossos."],
+   ["Menisco","Melhora o encaixe entre fêmur e tíbia."],
+   ["Medula óssea vermelha","Produz as células do sangue."],
+   ["Vitamina D","Permite a absorção do cálcio pelos ossos."],
+   ["Crânio","Protege o encéfalo."],
+   ["Coluna vertebral","Protege a medula espinal."],
+   ["Costelas e esterno","Protegem pulmões e coração."],
+   ["Mitocôndria","Produz energia para a contração."],
+   ["Cérebro","Interpreta os estímulos e controla o raciocínio."],
+   ["Cerebelo","Cuida do equilíbrio e da precisão dos movimentos."],
+   ["Hipotálamo","Controla a temperatura e a água do corpo."],
+   ["Tronco encefálico","Controla a respiração e os batimentos cardíacos."],
+   ["Meninges e líquor","Protegem o SNC contra impactos."],
+   ["Nervo aferente","Leva a informação até o SNC."],
+   ["Nervo eferente","Leva a resposta do SNC até o músculo."],
+   ["Receptor","Capta o estímulo."],
+   ["Efetor","Executa a resposta."]
+  ]
+ }
+},
+{
+ id:"quem", tipo:"quemsou", icone:"lupa", cor:"#7FD3FF",
+ titulo:"O Que Sou Eu?", desc:"Descubra a estrutura pelas pistas. Quanto menos pistas, mais pontos.",
+ rodadas:6, pergunta:"O que sou eu?",
+ dados:[
+  {r:"Cerebelo",pistas:["Faço parte do encéfalo.","Não sou a maior parte dele.","Se eu falhar, fica difícil escrever.","Cuido do equilíbrio."]},
+  {r:"Hipotálamo",pistas:["Faço parte do encéfalo.","Participo das emoções.","Controlo o apetite.","Controlo a temperatura e a água do corpo."]},
+  {r:"Tronco encefálico",pistas:["Faço parte do encéfalo.","Funciono sem você perceber.","Participo da deglutição.","Controlo a respiração e os batimentos do coração."]},
+  {r:"Cérebro",pistas:["Faço parte do SNC.","Tenho uma camada cinzenta, o córtex.","Guardo memórias e linguagem.","Sou a maior parte do encéfalo."]},
+  {r:"Medula espinal",pistas:["Faço parte do SNC.","Sou um cordão.","Fico dentro das vértebras.","Comando os atos reflexos."]},
+  {r:"Tendão",pistas:["Sou tecido conjuntivo.","Sou resistente e flexível.","Apareço nas pontas dos músculos.","Ligo o músculo ao osso."]},
+  {r:"Ligamento",pistas:["Sou tecido conjuntivo fibroso.","Fico nas articulações.","Jogadores às vezes me rompem.","Mantenho os ossos no lugar."]},
+  {r:"Cartilagem",pistas:["Sou um tecido macio.","Tubarões são feitos de mim.","O feto tem esqueleto só de mim no início.","Diminuo o atrito entre os ossos."]},
+  {r:"Medula óssea vermelha",pistas:["Sou gelatinosa.","Fico dentro de alguns ossos.","Moro no osso esponjoso.","Produzo as células do sangue."]},
+  {r:"Fêmur",pistas:["Sou um osso.","Faço parte do esqueleto apendicular.","Fico na coxa.","Sou o osso mais longo do corpo."]},
+  {r:"Bíceps",pistas:["Sou um músculo esquelético.","Fico no braço.","Trabalho em par com o tríceps.","Contraio quando você dobra o braço."]},
+  {r:"Mitocôndria",pistas:["Sou uma organela.","Sou abundante nos músculos.","Uso gás oxigênio.","Produzo energia pela respiração celular."]},
+  {r:"Músculo liso",pistas:["Sou um tecido muscular.","Não tenho estrias.","Minhas células têm forma de fuso.","Movimento o sistema digestório sem você querer."]},
+  {r:"Arco reflexo",pistas:["Sou um caminho do impulso.","Sou muito rápido.","Não passo pelo cérebro.","Faço você tirar a mão do fogo."]},
+  {r:"Vitamina D",pistas:["Sou fabricada pelo corpo.","Começo a ser feita na pele.","Preciso do sol.","Ajudo o cálcio a entrar nos ossos."]}
+ ]
+},
+{
+ id:"ordem", tipo:"ordem", icone:"linha", cor:"#FFC98A",
+ titulo:"Em Ordem", desc:"Ponha as etapas e as estruturas na sequência certa.",
+ dados:{
+  instrucao:"Toque nos itens na ordem certa.",
+  fimTitulo:"Sequência certa!", fimDica:"Entender a ordem ajuda a explicar na prova.", outro:"Outra sequência",
+  sets:[
+   {t:"Caminho do impulso nervoso",partes:["Início","","","","Fim"],p:["O receptor capta o estímulo.","O nervo sensitivo (aferente) leva a informação.","O SNC elabora a resposta.","O nervo motor (eferente) leva a resposta.","O efetor executa a ação."]},
+   {t:"Arco reflexo: mão no quente",partes:["Início","","","Fim"],p:["A pele capta o calor.","O nervo sensitivo leva o impulso até a medula espinal.","A medula elabora a resposta.","O nervo motor faz o músculo contrair e a mão sai."]},
+   {t:"Pegar a régua (olhos abertos)",partes:["Início","","","Fim"],p:["Os olhos veem a régua caindo.","O nervo sensitivo leva o estímulo ao cérebro.","O cérebro interpreta e elabora a resposta.","O nervo motor faz os dedos fecharem."]},
+   {t:"Do maior para o menor (músculo)",partes:["maior","","","","menor"],p:["Músculo","Feixe muscular","Fibra muscular","Miofibrila","Miômero"]},
+   {t:"Dobrar e esticar o braço",partes:["Início","","","Fim"],p:["O bíceps contrai.","O antebraço dobra.","O tríceps contrai e o bíceps relaxa.","O braço estica."]},
+   {t:"Formação do osso",partes:["Início","","","Fim"],p:["O feto tem esqueleto todo de cartilagem.","Depois da 12ª semana, a cartilagem começa a virar osso.","Na infância, a cartilagem de crescimento permite crescer.","No adulto, essa cartilagem já foi substituída."]},
+   {t:"Regiões da coluna, de cima para baixo",partes:["topo","","","base"],p:["Cervical","Torácica","Lombar","Sacral"]},
+   {t:"Vitamina D e cálcio",partes:["Início","","","Fim"],p:["O sol atinge a pele.","O corpo produz a vitamina D.","A vitamina D ajuda a absorver o cálcio.","Os ossos ficam mais duros e fortes."]}
+  ]
+ }
+},
+{
+ id:"vf", tipo:"vf", icone:"raio", cor:"#FFD23F",
+ titulo:"Verdadeiro ou Falso", desc:"Responda rápido antes do tempo acabar.",
+ dados:[
+  ["O sistema locomotor é formado pelo esqueleto, pelas articulações e pelos músculos.",true,"E é coordenado pelo sistema nervoso."],
+  ["O esqueleto só serve para os movimentos.",false,"Também dá postura, protege órgãos, guarda minerais e produz sangue."],
+  ["Crânio, coluna, esterno e costelas formam o esqueleto axial.",true,"Os membros formam o apendicular."],
+  ["Tubarões e raias têm esqueleto de cartilagem.",true,"São peixes cartilaginosos."],
+  ["Os ossos são feitos de tecido morto.",false,"São tecido vivo: se regeneram depois de uma fratura."],
+  ["A dureza dos ossos vem do cálcio.",true,"A elasticidade vem do colágeno."],
+  ["A vitamina D é obtida principalmente pelos alimentos.",false,"É fabricada pelo corpo, a partir da ação do sol na pele."],
+  ["A medula óssea vermelha produz as células do sangue.",true,"Fica dentro de alguns ossos."],
+  ["Toda articulação é móvel.",false,"As do crânio são fixas."],
+  ["O tendão liga o músculo ao osso.",true,"O ligamento mantém os ossos no lugar."],
+  ["O joelho funciona como uma dobradiça.",true,"O ombro funciona como bola e soquete."],
+  ["Existem três tipos de tecido muscular.",true,"Esquelético, cardíaco e liso."],
+  ["O músculo do coração tem contração voluntária.",false,"É involuntária."],
+  ["A dor depois do exercício é causada pelo ácido lático.",false,"Vem de microlesões nas miofibrilas."],
+  ["O exercício aumenta o número de células musculares.",false,"Aumenta o número de miofibrilas."],
+  ["A energia do músculo é produzida nas mitocôndrias.",true,"Pela respiração celular."],
+  ["Quando o bíceps contrai, o tríceps relaxa.",true,"É a ação antagônica."],
+  ["O peso da mochila deve ser de até 10% da massa corporal.",true,"E carregada com as duas alças."],
+  ["O SNC é formado por encéfalo e medula espinal.",true,"O SNP tem nervos e gânglios."],
+  ["Existem 31 pares de nervos cranianos.",false,"São 12 cranianos e 31 raquidianos."],
+  ["O cerebelo cuida do equilíbrio.",true,"E da precisão dos movimentos."],
+  ["O hipotálamo controla os batimentos cardíacos.",false,"Quem controla é o tronco encefálico."],
+  ["O cérebro é a maior parte do encéfalo.",true,"Interpreta os estímulos."],
+  ["Meninges e líquor protegem o SNC.",true,"Junto com o crânio e as vértebras."],
+  ["Nervos aferentes levam informações até o SNC.",true,"Também chamados de sensitivos."],
+  ["Nervos eferentes também são chamados de motores.",true,"Levam respostas para músculos e glândulas."],
+  ["Todos os nervos raquidianos são mistos.",true,"Os cranianos podem ser de qualquer tipo."],
+  ["No ato reflexo, o impulso passa pelo cérebro.",false,"A resposta é elaborada na medula espinal."],
+  ["Retiramos a mão do fogo antes de sentir dor.",true,"A dor é interpretada depois, no cérebro."],
+  ["Espirrar é um ato reflexo.",true,"Protege as vias respiratórias."],
+  ["Os neurônios se reproduzem facilmente.",false,"Não se reproduzem; por isso lesões na medula são graves."],
+  ["Paraplegia é a perda de movimentos da cintura para baixo.",true,"Tetraplegia afeta o corpo todo."],
+  ["O capacete protege a medula espinal.",false,"Protege o crânio e o encéfalo; a placa nas costas protege a coluna."]
+ ]
+},
+{
+ id:"mem", tipo:"memoria", icone:"cartas", cor:"#C9B6FF",
+ titulo:"Caça-Pares", desc:"Jogo da memória: junte cada termo ao seu significado.",
+ dados:[
+  ["Esqueleto axial","crânio, coluna e costelas"],["Esqueleto apendicular","ossos dos membros"],["Articulação","onde dois ossos se tocam"],
+  ["Tendão","liga músculo a osso"],["Ligamento","prende osso a osso"],["Cartilagem","diminui o atrito"],
+  ["Colágeno","elasticidade do osso"],["Cálcio","dureza do osso"],["Miócito","célula muscular"],["Miômero","unidade que contrai"],
+  ["Hipertrofia","crescimento do músculo"],["Ação antagônica","um contrai, outro relaxa"],
+  ["SNC","encéfalo e medula espinal"],["SNP","nervos e gânglios"],["Aferente","chega ao SNC"],["Eferente","sai do SNC"],
+  ["Cerebelo","equilíbrio"],["Tronco encefálico","respiração e coração"],["Arco reflexo","resposta pela medula"],["Paraplegia","sem movimento da cintura para baixo"]
+ ]
+}
+];
+
+</script>
+<script>
+/* =====================================================================
+   MOTOR DO SITE DE REVISÃO · não precisa mexer aqui.
+   Tudo o que muda de uma matéria para outra fica no bloco CONFIG acima.
+   ===================================================================== */
+const L = ["a","b","c","d"];
+const NS = (typeof SITE!=="undefined"&&SITE.id)?SITE.id+":":"";  /* separa o progresso salvo de cada matéria */
+const root = document.getElementById("root");
+let state = {view:"home"};
+
+function getBest(id){ try{ const v = localStorage.getItem(NS+"best-"+id); return v===null?null:+v; }catch(e){ return null; } }
+function setBest(id,n){ try{ const b=getBest(id); if(b===null||n>b) localStorage.setItem(NS+"best-"+id,String(n)); }catch(e){} }
+function shuffle(a){ a=a.slice(); for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];} return a; }
+const pick=(a,n)=>shuffle(a).slice(0,n);
+const norm=t=>t.normalize("NFD").replace(/[̀-ͯ]/g,"").toUpperCase();
+const starsTxt=n=>"★".repeat(n)+"☆".repeat(3-n);
+
+/* ===== IDENTIDADE · Profª Ana Clara ===== */
+const pacWa=`<svg class="pac-wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>`;
+const pacNome=()=>`<span class="pac-sr">Professora Ana Clara</span><span aria-hidden="true">Prof<span class="pac-ord">a</span> Ana Clara</span>`;
+function pacSignature(){
+  const d=SITE.doodles||["","","",""];
+  return `<div class="pac">
+    <div class="pac-board">
+      <span class="pac-doodle tl" aria-hidden="true">${d[0]}</span><span class="pac-doodle tr" aria-hidden="true">${d[1]}</span>
+      <span class="pac-doodle bl" aria-hidden="true">${d[2]}</span><span class="pac-doodle br" aria-hidden="true">${d[3]}</span>
+      <span class="pac-name">${pacNome()}</span>
+    </div>
+    <div class="pac-tray" aria-hidden="true"><i class="c1"></i><i class="c2"></i><i class="er"></i></div>
+  </div>`;
+}
+function pacPlate(){ return `<div class="pac-plate">${pacNome()}</div>`; }
+function pacMini(){ return SITE.contato?`<a class="pac-mini" href="${SITE.contato}" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">${pacWa}<span>Contato</span></a>`:""; }
+
+/* ===== ícones (traço, sem emoji) ===== */
+const SV=(d)=>`<svg viewBox="0 0 24 24" aria-hidden="true">${d}</svg>`;
+const CHEV=SV('<path d="M9 5l7 7-7 7"/>');
+const ICONES={
+ balao:SV('<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-7l-5 4v-4H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2Z"/>'),
+ raio:SV('<path d="M13 2 4 14h6l-1 8 9-12h-6l1-8Z"/>'),
+ cartas:SV('<rect x="3" y="8" width="12" height="13" rx="2"/><path d="M8 4.5h11a2 2 0 0 1 2 2V17"/>'),
+ alvo:SV('<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4.5"/><path d="M12 12h.01"/>'),
+ letras:SV('<path d="M3 16.5 5.8 7l2.8 9.5M4.2 13.3h3.2"/><path d="M11.5 17h3.5M17.5 17h3.5"/>'),
+ lista:SV('<path d="M9 6.5h12M9 12h12M9 17.5h12"/><path d="M3.5 6.5h.01M3.5 12h.01M3.5 17.5h.01"/>'),
+ linha:SV('<path d="M3 12h18"/><circle cx="6" cy="12" r="2"/><circle cx="12" cy="12" r="2"/><circle cx="18" cy="12" r="2"/><path d="M6 6v4M12 14v4M18 6v4"/>'),
+ templo:SV('<path d="M4 9h16L12 4 4 9Z"/><path d="M6 9v9M10 9v9M14 9v9M18 9v9"/><path d="M3 21h18M4 18h16"/>'),
+ relogio:SV('<circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/>'),
+ lupa:SV('<circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/><path d="M10.5 8v.01M10.5 10.5v3"/>'),
+ setas:SV('<path d="M4 7h11M12 4l3 3-3 3"/><path d="M20 17H9M12 14l-3 3 3 3"/>'),
+ balanca:SV('<path d="M12 4v16M7 20h10M5 7h14"/><path d="M5 7 2.5 13h5L5 7ZM19 7l-2.5 6h5L19 7Z"/>')
+};
+const HEART=on=>`<svg class="hrt${on?"":" off"}" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7.5-4.6-9.6-9.2C.9 8.4 2.7 5 6 5c2 0 3.4 1 4.4 2.5C11.4 6 12.8 5 15 5c3.3 0 5.1 3.4 3.6 6.8C16.5 16.4 12 21 12 21Z"/></svg>`;
+const hearts=(n,t)=>`<span role="img" aria-label="${n} de ${t} vidas">${Array.from({length:t},(_,i)=>HEART(i<n)).join("")}</span>`;
+
+/* =============== BASE DOS JOGUINHOS =============== */
+let GT=[];
+function gClear(){ GT.forEach(t=>{clearInterval(t);clearTimeout(t);}); GT=[]; }
+function gTimeout(fn,ms){ const t=setTimeout(fn,ms); GT.push(t); return t; }
+function gInterval(fn,ms){ const t=setInterval(fn,ms); GT.push(t); return t; }
+function gBest(id){ try{ const v=localStorage.getItem(NS+"gbest-"+id); return v===null?null:+v; }catch(e){ return null; } }
+function gSetBest(id,n,low){ try{ const b=gBest(id); if(b===null||(low?n<b:n>b)) localStorage.setItem(NS+"gbest-"+id,String(n)); }catch(e){} }
+function anim(node,cls){ node.classList.remove(cls); void node.offsetWidth; node.classList.add(cls); }
+function gEnd(el,o){
+  el.innerHTML=`<div class="panel"><span class="qnum">${o.title||"Resultado"}</span>
+    <div class="score">${o.big}</div><p class="q">${o.msg}</p>${o.extra||""}
+    <button class="btn" id="gagain">Jogar de novo</button>
+    ${o.alt?`<button class="btn alt" id="galt">${o.alt.label}</button>`:""}
+    <button class="btn alt" id="gmenu">Voltar aos joguinhos</button></div>`;
+  document.getElementById("gagain").addEventListener("click",o.again);
+  if(o.alt) document.getElementById("galt").addEventListener("click",o.alt.fn);
+  document.getElementById("gmenu").addEventListener("click",()=>{ gClear(); home("games"); });
+  window.scrollTo({top:0});
+}
+function reviewBox(rows){
+  return rows.length?`<p style="margin:0;font-weight:800">Para revisar:</p><div class="review">${rows.map(r=>`<div>${r}</div>`).join("")}</div>`:"";
+}
+const nota=(n,t,ok,meio,ruim)=>n===t?ok:n>=t*0.7?meio:ruim;
+function feedback(ok,txt,last,onNext){
+  const fb=document.getElementById("gfb");
+  fb.innerHTML=`<div class="balloon ${ok?"ok":"bad"}"><span class="tag">${ok?"Acertou!":"Quase!"}</span>${txt}</div>
+    <button class="btn" id="gnx">${last?"Ver resultado":"Próxima"}</button>`;
+  const nx=document.getElementById("gnx");
+  nx.addEventListener("click",onNext);
+  nx.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+
+/* ---------- TIPO "simbolos": reconheça a categoria pelo desenho ou pela situação ---------- */
+function jogoSimbolos(el,g){
+  const d=g.dados, keys=Object.keys(d.cats);
+  const nA=Math.min(d.rodadasDesenho??3,keys.length), nB=Math.min(d.rodadasSituacao??5,d.situacoes.length);
+  const rounds=shuffle(pick(keys,nA).map(k=>({t:"A",k})).concat(pick(d.situacoes,nB).map(s=>({t:"B",txt:s[0],k:s[1]}))));
+  let i=0,score=0;
+  function show(){
+    const r=rounds[i]; let body;
+    if(r.t==="A"){
+      const opts=shuffle([r.k].concat(pick(keys.filter(k=>k!==r.k),3)));
+      body=`<p class="q" style="margin-top:0">${d.perguntaDesenho||"O que este desenho representa?"}</p><div class="gballoon" aria-hidden="true">${d.cats[r.k].svg}</div>
+        <div class="opts">${opts.map(k=>`<button class="opt" data-k="${k}"><span>${d.cats[k].nome}</span></button>`).join("")}</div>`;
+    } else {
+      body=`<p class="q" style="margin-top:0">${d.perguntaSituacao||"Qual combina com:"} <em>${r.txt}</em></p>
+        <div class="svgrid">${shuffle(keys).map(k=>`<button class="svbtn" data-k="${k}" aria-label="${d.cats[k].nome}">${d.cats[k].svg}<span class="svl">${d.cats[k].nome}</span></button>`).join("")}</div>`;
+    }
+    el.innerHTML=`<div class="hud"><span class="chip">Rodada ${i+1}/${rounds.length}</span><span class="chip hot" id="bS">Acertos: ${score}</span></div>
+      <div class="panel">${body}<div id="gfb" aria-live="polite"></div></div>`;
+    el.querySelectorAll("[data-k]").forEach(b=>b.addEventListener("click",()=>answer(b.dataset.k,b)));
+    window.scrollTo({top:0});
+  }
+  function answer(k,btn){
+    const r=rounds[i], ok=k===r.k; if(ok) score++;
+    el.querySelectorAll("[data-k]").forEach(b=>{ b.disabled=true; if(b.dataset.k===r.k) b.classList.add("right"); else if(b===btn) b.classList.add("wrong"); });
+    document.getElementById("bS").textContent="Acertos: "+score;
+    const last=i===rounds.length-1;
+    feedback(ok,`${d.cats[r.k].nome}: ${d.cats[r.k].dica}.`,last,()=>{ if(last) end(); else { i++; show(); } });
+  }
+  function end(){
+    gSetBest(g.id,score);
+    gEnd(el,{big:score+"/"+rounds.length,msg:nota(score,rounds.length,"Perfeito! Você reconhece todos.","Muito bem! Só falta afiar um pouquinho.",d.dicaFim||"Vale reler a explicação e jogar de novo."),again:()=>jogoSimbolos(el,g)});
+  }
+  show();
+}
+
+/* ---------- TIPO "vf": relâmpago verdadeiro ou falso ---------- */
+function jogoVF(el,g){
+  const VF=g.dados, T=g.segundos||60;
+  function intro(){
+    el.innerHTML=`<div class="panel"><span class="qnum">Regras</span>
+      <p class="q">Você tem ${T} segundos e 3 vidas. Leia a frase e toque em VERDADEIRO ou FALSO. Acertos seguidos valem mais pontos!</p>
+      <button class="btn" id="gstart">Valendo!</button></div>`;
+    document.getElementById("gstart").addEventListener("click",play);
+  }
+  function play(){
+    let deck=shuffle(VF), n=0, score=0, hits=0, lives=3, streak=0, t=T, done=false; const misses=[];
+    el.innerHTML=`<div class="hud"><span class="chip" id="vS"></span><span class="chip" id="vL"></span><span class="chip hot" id="vC"></span></div>
+      <div class="bar" id="vBar"><i id="vB"></i></div>
+      <div class="panel gcard txt" id="vQ"></div>
+      <div class="ans"><button class="btn vt" id="vT">VERDADEIRO</button><button class="btn vf" id="vF">FALSO</button></div>
+      <div class="vfb" id="vfb" aria-live="polite"></div>`;
+    const $=id=>document.getElementById(id);
+    function hud(){ $("vS").textContent=score+" pts"; $("vL").innerHTML=hearts(lives,3); $("vC").textContent=streak>=2?"Combo x"+streak:"Combo"; }
+    function show(){ if(n>=deck.length){ deck=shuffle(VF); n=0; } $("vQ").textContent=deck[n][0]; anim($("vQ"),"pop"); }
+    function fim(){
+      if(done) return; done=true; gClear();
+      gSetBest(g.id,score);
+      gEnd(el,{big:score+" pts",
+        msg:`${hits} acerto${hits===1?"":"s"}. ${hits>=15?"Que velocidade! Você está afiado.":hits>=8?"Muito bom! Dá para bater o recorde.":"Bora tentar de novo e ir mais longe."}`,
+        extra:reviewBox(misses.slice(0,4).map(m=>`${m[0]}<br><strong>${m[1]?"VERDADEIRO":"FALSO"}: ${m[2]}</strong>`)),
+        again:play});
+    }
+    function ans(v){
+      if(done) return;
+      const [txt,val,why]=deck[n], ok=v===val;
+      if(ok){ score+=10+Math.min(streak,5)*2; hits++; streak++; $("vfb").innerHTML=`<span class="okm">Certo!${streak>=3?" Combo x"+streak+"!":""}</span>`; }
+      else { lives--; streak=0; misses.push([txt,val,why]); $("vfb").innerHTML=`<span class="badm">Era ${val?"VERDADEIRO":"FALSO"}: ${why}</span>`; }
+      n++; hud();
+      if(lives<=0) return fim();
+      show();
+    }
+    $("vT").addEventListener("click",()=>ans(true));
+    $("vF").addEventListener("click",()=>ans(false));
+    gInterval(()=>{
+      t-=0.1; const bar=$("vBar");
+      if(bar){ $("vB").style.width=(Math.max(t,0)/T*100)+"%"; bar.classList.toggle("low",t<=10); }
+      if(t<=0){ t=0; fim(); }
+    },100);
+    hud(); show();
+  }
+  intro();
+}
+
+/* ---------- TIPO "antesdepois": qual vem primeiro? (corrida contra o relógio) ---------- */
+function jogoAntesDepois(el,g){
+  const d=g.dados, T=g.segundos||60, gap=d.distanciaMinima??0;
+  function intro(){
+    el.innerHTML=`<div class="panel"><span class="qnum">Regras</span>
+      <p class="q">${T} segundos e 3 vidas. Aparecem dois cartões: toque em ${d.regra||"o que vem primeiro"}. Acertos seguidos valem mais pontos!</p>
+      <button class="btn" id="gstart">Valendo!</button></div>`;
+    document.getElementById("gstart").addEventListener("click",play);
+  }
+  function par(){
+    for(let k=0;k<200;k++){ const [a,b]=pick(d.itens,2); if(Math.abs(a.v-b.v)>gap&&a.v!==b.v) return [a,b]; }
+    return pick(d.itens,2);
+  }
+  function play(){
+    let score=0,hits=0,lives=3,streak=0,t=T,done=false,cur; const misses=[];
+    el.innerHTML=`<div class="hud"><span class="chip" id="aS"></span><span class="chip" id="aL"></span><span class="chip hot" id="aC"></span></div>
+      <div class="bar" id="aBar"><i id="aB"></i></div>
+      <p class="q" style="text-align:center;margin:14px 0 0">${d.pergunta||"O que vem primeiro?"}</p>
+      <div class="duel" id="aD"></div>
+      <div class="vfb" id="afb" aria-live="polite"></div>`;
+    const $=id=>document.getElementById(id);
+    function hud(){ $("aS").textContent=score+" pts"; $("aL").innerHTML=hearts(lives,3); $("aC").textContent=streak>=2?"Combo x"+streak:"Combo"; }
+    function show(){
+      cur=par();
+      $("aD").innerHTML=cur.map((it,k)=>`<button class="ev" data-k="${k}">${it.t}</button>`).join("");
+      $("aD").querySelectorAll(".ev").forEach(b=>b.addEventListener("click",()=>ans(+b.dataset.k)));
+      anim($("aD"),"pop");
+    }
+    function ans(k){
+      if(done) return;
+      const first=(d.maiorPrimeiro? (cur[0].v>cur[1].v?0:1) : (cur[0].v<cur[1].v?0:1)), ok=k===first;
+      const A=cur[first], B=cur[1-first];
+      const why=`${A.t} (${A.label}) vem antes de ${B.t.charAt(0).toLowerCase()+B.t.slice(1)} (${B.label}).`;
+      if(ok){ score+=10+Math.min(streak,5)*2; hits++; streak++; $("afb").innerHTML=`<span class="okm">Certo! ${A.label} → ${B.label}${streak>=3?" · Combo x"+streak+"!":""}</span>`; }
+      else { lives--; streak=0; misses.push(why); $("afb").innerHTML=`<span class="badm">Não: ${A.label} vem antes de ${B.label}.</span>`; }
+      hud();
+      if(lives<=0) return fim();
+      show();
+    }
+    function fim(){
+      if(done) return; done=true; gClear();
+      gSetBest(g.id,score);
+      gEnd(el,{big:score+" pts",msg:`${hits} acerto${hits===1?"":"s"}. ${hits>=15?"Que linha do tempo afiada!":hits>=8?"Muito bom! Dá para bater o recorde.":"Bora tentar de novo e ir mais longe."}`,
+        extra:reviewBox(misses.slice(0,4)),again:play});
+    }
+    gInterval(()=>{
+      t-=0.1; const bar=$("aBar");
+      if(bar){ $("aB").style.width=(Math.max(t,0)/T*100)+"%"; bar.classList.toggle("low",t<=10); }
+      if(t<=0){ t=0; fim(); }
+    },100);
+    hud(); show();
+  }
+  intro();
+}
+
+/* ---------- TIPO "quemsou": adivinhe pelas pistas ---------- */
+function jogoQuemSou(el,g){
+  const d=g.dados, N=Math.min(g.rodadas||6,d.length), rounds=pick(d,N);
+  let i=0,total=0; const max=N*4;
+  function show(){
+    const r=rounds[i], opts=shuffle([r.r].concat(pick(d.filter(x=>x.r!==r.r).map(x=>x.r),3)));
+    let shown=1, done=false;
+    el.innerHTML=`<div class="hud"><span class="chip">Rodada ${i+1}/${N}</span><span class="chip hot" id="qT">Pontos: ${total}</span><span class="chip" id="qV"></span></div>
+      <div class="panel"><p class="q" style="margin-top:0">${g.pergunta||"Quem sou eu?"}</p>
+      <ol class="clues" id="qC"></ol>
+      <button class="btn alt" id="qMais" style="margin:0 0 14px">Mais uma pista</button>
+      <div class="opts">${opts.map(o=>`<button class="opt" data-o="${o}"><span>${o}</span></button>`).join("")}</div>
+      <div id="gfb" aria-live="polite"></div></div>`;
+    const $=id=>document.getElementById(id);
+    function paint(){
+      $("qC").innerHTML=r.pistas.map((p,k)=>k<shown?`<li>${p}</li>`:`<li class="hide">Pista escondida</li>`).join("");
+      $("qV").textContent=`Vale ${Math.max(1,5-shown)} pt${5-shown===1?"":"s"}`;
+      $("qMais").disabled=shown>=r.pistas.length;
+    }
+    function finish(ok){
+      done=true; shown=r.pistas.length; paint();
+      const pts=ok?Math.max(1,5-revealedAtGuess):0; total+=pts; $("qT").textContent="Pontos: "+total;
+      el.querySelectorAll(".opt").forEach(b=>{ b.disabled=true; if(b.dataset.o===r.r) b.classList.add("right"); });
+      $("qMais").disabled=true;
+      const last=i===N-1;
+      feedback(ok,`${ok?`+${pts} ponto${pts===1?"":"s"}. `:""}A resposta é <strong>${r.r}</strong>.${r.extra?" "+r.extra:""}`,last,()=>{ if(last) end(); else { i++; show(); } });
+    }
+    let revealedAtGuess=1;
+    $("qMais").addEventListener("click",()=>{ if(done) return; shown=Math.min(shown+1,r.pistas.length); paint(); });
+    el.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>{
+      if(done) return;
+      revealedAtGuess=shown;
+      if(b.dataset.o===r.r) finish(true);
+      else {
+        b.disabled=true; b.classList.add("wrong","off"); anim(b,"shake");
+        if(shown<r.pistas.length){ shown++; paint(); }
+        else finish(false);
+      }
+    }));
+    paint(); window.scrollTo({top:0});
+  }
+  function end(){
+    gSetBest(g.id,total);
+    gEnd(el,{big:total+" pts",msg:`De ${max} possíveis. ${total>=max*0.75?"Detetive de primeira!":total>=max*0.45?"Muito bem! Tente acertar com menos pistas.":"Vale reler a matéria e tentar de novo."}`,again:()=>jogoQuemSou(el,g)});
+  }
+  show();
+}
+
+/* ---------- TIPO "liga": ligue cada item ao seu par (ex.: causa → consequência) ---------- */
+function jogoLiga(el,g){
+  const d=g.dados, N=Math.min(g.rodadas||8,d.pares.length), rounds=pick(d.pares,N);
+  let i=0,score=0; const miss=[];
+  function show(){
+    const [a,b]=rounds[i], opts=shuffle([b].concat(pick(d.pares.filter(p=>p[1]!==b).map(p=>p[1]),3)));
+    el.innerHTML=`<div class="hud"><span class="chip">Rodada ${i+1}/${N}</span><span class="chip hot" id="lS">Acertos: ${score}</span></div>
+      <div class="panel"><span class="qnum">${d.rotuloA||"Item"}</span>
+      <p class="excerpt">${a}</p>
+      <p class="q">${d.pergunta||"Qual é o par certo?"}</p>
+      <div class="opts">${opts.map((o,k)=>`<button class="opt" data-k="${k}"><span class="l">${L[k]})</span><span>${o}</span></button>`).join("")}</div>
+      <div id="gfb" aria-live="polite"></div></div>`;
+    el.querySelectorAll(".opt").forEach(btn=>btn.addEventListener("click",()=>{
+      const k=+btn.dataset.k, ok=opts[k]===b; if(ok) score++; else miss.push(`${a}<br><strong>→ ${b}</strong>`);
+      el.querySelectorAll(".opt").forEach((x,j)=>{ x.disabled=true; if(opts[j]===b) x.classList.add("right"); else if(x===btn) x.classList.add("wrong"); });
+      document.getElementById("lS").textContent="Acertos: "+score;
+      const last=i===N-1;
+      feedback(ok,`${d.rotuloB||"Par"}: ${b}`,last,()=>{ if(last) end(); else { i++; show(); } });
+    }));
+    window.scrollTo({top:0});
+  }
+  function end(){
+    gSetBest(g.id,score);
+    gEnd(el,{big:score+"/"+N,msg:nota(score,N,"Perfeito! Você ligou tudo certinho.","Muito bem!","Vale reler a matéria e tentar de novo."),extra:reviewBox(miss),again:()=>jogoLiga(el,g)});
+  }
+  show();
+}
+
+/* ---------- TIPO "memoria": jogo da memória termo × significado ---------- */
+function jogoMemoria(el,g){
+  const ps=pick(g.dados,6);
+  const cards=shuffle(ps.flatMap((p,k)=>[{k,t:p[0],term:true},{k,t:p[1],term:false}]));
+  let first=null, lock=false, moves=0, found=0;
+  el.innerHTML=`<p class="sub" style="margin-bottom:10px">Vire duas cartas: as amarelas são os termos, as brancas são os significados.</p>
+    <div class="hud"><span class="chip" id="mM">Jogadas: 0</span><span class="chip hot" id="mF">Pares: 0/6</span></div>
+    <div class="mem">${cards.map((c,j)=>`<button class="mcard ${c.term?"term":"def"}" data-j="${j}" aria-label="Carta ${j+1}"><span class="mb" aria-hidden="true">?</span><span class="mf">${c.t}</span></button>`).join("")}</div>`;
+  const btn=j=>el.querySelector(`.mcard[data-j="${j}"]`);
+  el.querySelectorAll(".mcard").forEach(b=>b.addEventListener("click",()=>flip(+b.dataset.j)));
+  function flip(j){
+    const b=btn(j);
+    if(lock||b.classList.contains("up")||b.classList.contains("done")) return;
+    b.classList.add("up");
+    if(first===null){ first=j; return; }
+    moves++; document.getElementById("mM").textContent="Jogadas: "+moves;
+    const a=first; first=null;
+    if(cards[a].k===cards[j].k){
+      [a,j].forEach(x=>{ const c=btn(x); c.classList.remove("up"); c.classList.add("done"); });
+      found++; document.getElementById("mF").textContent=`Pares: ${found}/6`;
+      if(found===6) gTimeout(win,700);
+    } else {
+      lock=true;
+      gTimeout(()=>{ btn(a).classList.remove("up"); btn(j).classList.remove("up"); lock=false; },900);
+    }
+  }
+  function win(){
+    gSetBest(g.id,moves,true);
+    const s=moves<=8?3:moves<=12?2:1;
+    gEnd(el,{big:starsTxt(s),msg:`Você achou os 6 pares em ${moves} jogadas. ${s===3?"Memória de elefante!":s===2?"Muito bom! Dá para fazer em menos.":"Boa! Tente de novo para usar menos jogadas."}`,again:()=>jogoMemoria(el,g)});
+  }
+}
+
+/* ---------- TIPO "separa": classifique rápido em caixas ---------- */
+function jogoSepara(el,g){
+  const SEP=g.dados;
+  function menu(){
+    el.innerHTML=`<div class="panel"><span class="qnum">Escolha o desafio</span>
+      <div class="opts">${SEP.map((c,k)=>`<button class="opt" data-c="${k}"><span>${c.nome}</span></button>`).join("")}</div></div>`;
+    el.querySelectorAll("[data-c]").forEach(b=>b.addEventListener("click",()=>play(SEP[+b.dataset.c])));
+  }
+  function play(c){
+    gClear();
+    const items=pick(c.items,Math.min(10,c.items.length)); let i=0,score=0,streak=0,lock=false; const miss=[];
+    el.innerHTML=`<div class="hud"><span class="chip" id="sP"></span><span class="chip hot" id="sS"></span><span class="chip" id="sC"></span></div>
+      <p class="sub" style="margin-bottom:0">${c.dica}</p>
+      <div class="panel gcard word" id="sW"></div>
+      <div class="bins">${c.bins.map(b=>`<button class="btn bin" data-b="${b.k}">${b.label}${b.sub?`<small>${b.sub}</small>`:""}</button>`).join("")}</div>`;
+    const $=id=>document.getElementById(id), bins=[...el.querySelectorAll(".bin")];
+    function hud(){ $("sP").textContent=`${Math.min(i+1,items.length)}/${items.length}`; $("sS").textContent=`Acertos: ${score}`; $("sC").textContent=streak>=2?`Combo x${streak}`:""; }
+    function show(){ lock=false; bins.forEach(b=>b.classList.remove("right","wrong")); const w=$("sW"); w.textContent=items[i][0]; w.classList.toggle("long",items[i][0].length>14); anim(w,"pop"); hud(); }
+    function choose(k,btn){
+      if(lock) return; lock=true;
+      const right=items[i][1], ok=k===right;
+      if(ok){ score++; streak++; btn.classList.add("right"); }
+      else { streak=0; btn.classList.add("wrong"); bins.find(b=>b.dataset.b===right).classList.add("right"); miss.push(items[i]); }
+      hud();
+      gTimeout(()=>{ i++; if(i>=items.length) end(); else show(); }, ok?550:1400);
+    }
+    function end(){
+      gSetBest(g.id,score);
+      gEnd(el,{title:"Resultado · "+c.nome,big:score+"/"+items.length,
+        msg:score===items.length?"Perfeito! Nenhum escapou.":score>=items.length*0.7?"Muito bom!":"Vale reler a matéria e tentar de novo.",
+        extra:reviewBox(miss.map(m=>`<strong>${m[0]}</strong> → ${c.bins.find(b=>b.k===m[1]).label}`)),
+        again:()=>play(c), alt:{label:"Escolher outro desafio",fn:menu}});
+    }
+    bins.forEach(b=>b.addEventListener("click",()=>choose(b.dataset.b,b)));
+    show();
+  }
+  if(SEP.length===1) play(SEP[0]); else menu();
+}
+
+/* ---------- TIPO "forca": adivinhe a palavra pela dica ---------- */
+function jogoForca(el,g){
+  const words=pick(g.dados,5); let wi=0, found=0;
+  function word(){
+    const [w,dica]=words[wi], letters=[...w], used=new Set(); let lives=6, done=false;
+    el.innerHTML=`<div class="hud"><span class="chip">Palavra ${wi+1}/${words.length}</span><span class="chip hot">Acertei: ${found}</span><span class="chip" id="fL"></span></div>
+      <div class="panel"><p class="q" style="margin-top:0">Dica: ${dica}</p>
+      <div class="fw" id="fW" aria-live="polite"></div>
+      <div class="fk">${"ABCDEFGHIJKLMNOPQRSTUVWXYZ".split("").map(l=>`<button class="key" data-l="${l}">${l}</button>`).join("")}</div>
+      <div id="ffb" aria-live="polite"></div></div>`;
+    const $=id=>document.getElementById(id);
+    function paint(reveal){
+      $("fW").innerHTML=letters.map(ch=>{ if(ch===" ") return `<span class="fl sp"></span>`; const got=used.has(norm(ch)); return `<span class="fl${reveal&&!got?" miss":""}">${got||reveal?ch:""}</span>`; }).join("");
+      $("fL").innerHTML=hearts(lives,6);
+    }
+    function finish(won){
+      done=true; paint(!won);
+      el.querySelectorAll(".key").forEach(k=>k.disabled=true);
+      const last=wi===words.length-1;
+      $("ffb").innerHTML=`<div class="balloon ${won?"ok":"bad"}"><span class="tag">${won?"Acertou!":"Não foi dessa vez"}</span>A palavra era <strong>${w}</strong>.</div>
+        <button class="btn" id="fnx">${last?"Ver resultado":"Próxima palavra"}</button>`;
+      $("fnx").addEventListener("click",()=>{ if(last) end(); else { wi++; word(); } });
+      $("fnx").scrollIntoView({behavior:"smooth",block:"nearest"});
+    }
+    function guess(l,btn){
+      if(done||used.has(l)) return;
+      used.add(l); btn.disabled=true;
+      if(letters.some(ch=>norm(ch)===l)) btn.classList.add("right"); else { btn.classList.add("wrong"); lives--; }
+      paint(false);
+      if(letters.every(ch=>ch===" "||used.has(norm(ch)))){ found++; finish(true); }
+      else if(lives<=0) finish(false);
+    }
+    el.querySelectorAll(".key").forEach(k=>k.addEventListener("click",()=>guess(k.dataset.l,k)));
+    paint(false); window.scrollTo({top:0});
+  }
+  function end(){
+    gSetBest(g.id,found);
+    gEnd(el,{big:found+"/"+words.length,msg:found===words.length?"Sem errar nenhuma! Que vocabulário.":found>=3?"Muito bem! Quase lá.":"Vale reler a matéria e tentar de novo.",again:()=>jogoForca(el,g)});
+  }
+  word();
+}
+
+/* ---------- TIPO "ordem": coloque em ordem (linha do tempo, etapas, enredo) ---------- */
+function jogoOrdem(el,g){
+  const d=g.dados;
+  if(!g._fila||!g._fila.length) g._fila=shuffle(d.sets.map((h,k)=>k));
+  const h=d.sets[g._fila.shift()], n=h.p.length, partes=h.partes||d.partes||h.p.map((_,k)=>`${k+1}º`);
+  const cards=shuffle(h.p.map((t,k)=>({t,k})));
+  let next=0, errs=0;
+  el.innerHTML=`<div class="hud"><span class="chip">${h.t}</span><span class="chip hot" id="eE">Erros: 0</span></div>
+    <p class="sub" style="margin-bottom:10px">${d.instrucao||"Toque nos itens na ordem certa."}</p>
+    <div class="slots">${partes.map((p,k)=>`<div class="slot" id="sl${k}"><b>${k+1}${p?" · "+p:""}</b><span>toque no item certo</span></div>`).join("")}</div>
+    <div class="cards">${cards.map(c=>`<button class="ecard" data-k="${c.k}">${c.t}</button>`).join("")}</div>
+    <div id="efb" aria-live="polite"></div>`;
+  el.querySelectorAll(".ecard").forEach(b=>b.addEventListener("click",()=>{
+    if(+b.dataset.k===next){
+      const sl=document.getElementById("sl"+next);
+      sl.classList.add("full"); if(h.d&&h.d[next]) sl.querySelector("b").textContent=`${next+1} · ${h.d[next]}`;
+      sl.querySelector("span").textContent=b.textContent; b.classList.add("used"); next++;
+      if(next===n) win();
+    } else {
+      errs++; document.getElementById("eE").textContent="Erros: "+errs; anim(b,"shake");
+    }
+  }));
+  function win(){
+    const s=errs===0?3:errs<=2?2:1; gSetBest(g.id,s);
+    document.getElementById("efb").innerHTML=`<div class="balloon ok"><span class="tag">${d.fimTitulo||"Tudo em ordem!"} ${starsTxt(s)}</span>${errs===0?"Sem nenhum erro.":errs+(errs===1?" erro":" erros")+" no caminho."} ${d.fimDica||""}</div>
+      <button class="btn" id="eNext">${d.outro||"Outra sequência"}</button><button class="btn alt" id="eMenu">Voltar aos joguinhos</button>`;
+    document.getElementById("eNext").addEventListener("click",()=>jogoOrdem(el,g));
+    document.getElementById("eMenu").addEventListener("click",()=>{ gClear(); home("games"); });
+    document.getElementById("efb").scrollIntoView({behavior:"smooth",block:"nearest"});
+  }
+}
+
+const TIPOS={simbolos:jogoSimbolos,vf:jogoVF,antesdepois:jogoAntesDepois,quemsou:jogoQuemSou,liga:jogoLiga,memoria:jogoMemoria,separa:jogoSepara,forca:jogoForca,ordem:jogoOrdem};
+const FMT={
+ simbolos:(b,g)=>`melhor: ${b} acertos`, vf:b=>`recorde: ${b} pts`, antesdepois:b=>`recorde: ${b} pts`,
+ quemsou:b=>`recorde: ${b} pts`, liga:b=>`melhor: ${b} acertos`, memoria:b=>`recorde: ${b} jogadas`,
+ separa:b=>`melhor: ${b} acertos`, forca:b=>`melhor: ${b}/5`, ordem:b=>`melhor: ${starsTxt(b)}`
+};
+
+function openGame(id){
+  gClear(); root.classList.remove("wide");
+  const g=JOGOS.find(x=>x.id===id);
+  state={view:"game",id};
+  root.innerHTML=`<button class="back" id="back">← Todos os joguinhos</button>
+    <h1 style="font-size:clamp(1.8rem,7vw,2.5rem)">${g.titulo}</h1>
+    ${pacPlate()}
+    <p class="sub">${g.desc}</p>
+    <div id="game"></div>`;
+  document.getElementById("back").addEventListener("click",()=>{ gClear(); home("games"); });
+  window.scrollTo({top:0});
+  TIPOS[g.tipo](document.getElementById("game"),g);
+}
+
+/* =============== TELA INICIAL =============== */
+function home(tab){
+  tab = typeof tab==="string" ? tab : "mods";
+  gClear(); root.classList.add("wide");
+  state={view:"home",tab};
+  const cap=t=>t.charAt(0).toUpperCase()+t.slice(1);
+  const prog=(label,n,t)=>`<div class="prog"><span>${label}</span><span class="track"><i style="width:${Math.round(n/t*100)}%"></i></span><b>${n}/${t}</b></div>`;
+  const doneM=MODS.filter(m=>getBest(m.id)!==null).length, doneG=JOGOS.filter(g=>gBest(g.id)!==null).length;
+  const card=(m,i)=>{
+    const b=getBest(m.id);
+    return `<button class="mod" data-id="${m.id}" style="--c:${m.color};--i:${i}">
+      <span class="badge${m.tag.length>2?" sm":""}" style="background:${m.color}">${m.tag}</span>
+      <span class="mt"><h2>${m.title}</h2><p>${m.pages}</p>${b!==null?`<span class="pill">Melhor nota: ${b}/${m.quiz.length}</span>`:""}</span>
+      <span class="go" aria-hidden="true">${CHEV}</span>
+    </button>`;};
+  const secs=(typeof SECOES!=="undefined"&&SECOES.length)?SECOES:[{mod:0}];
+  const grupo=(sec)=>{ const ms=MODS.filter(m=>(m.mod||0)===(sec.mod||0)); if(!ms.length) return "";
+    return `${sec.t?`<h2 class="sec">${sec.t}</h2>`:""}${sec.s?`<p class="secsub">${sec.s}</p>`:""}<div class="grid${ms.length===1?" solo":""}">${ms.map(card).join("")}</div>`; };
+  const mods = prog("Quizzes feitos",doneM,MODS.length)+secs.map(grupo).join("")+
+    `<p class="foot"><i class='ib'></i> ${SITE.rodapeModulos||"Quando aparece “pág.”, vale abrir a apostila."}</p>`;
+  const games = prog("Jogos já jogados",doneG,JOGOS.length)+`<div class="grid">${JOGOS.map((g,i)=>{
+    const b=gBest(g.id);
+    return `<button class="mod" data-g="${g.id}" style="--c:${g.cor};--i:${i}">
+      <span class="badge" style="background:${g.cor}">${ICONES[g.icone]||ICONES.alvo}</span>
+      <span class="mt"><h2>${g.titulo}</h2><p>${g.desc}</p>${b!==null?`<span class="pill">${cap(FMT[g.tipo](b,g))}</span>`:""}</span>
+      <span class="go" aria-hidden="true">${CHEV}</span>
+    </button>`;}).join("")}</div>
+  <p class="foot">${SITE.rodapeJogos||"Errou? Sem problema: é treinando que se aprende."}</p>`;
+  root.innerHTML = `
+  <div class="hero">
+  <div class="toprow"><span class="eyebrow">${SITE.serie}</span>${pacMini()}</div>
+  <h1>${SITE.titulo}</h1>
+  ${pacSignature()}
+  <p class="sub">${tab==="games"?SITE.subJogos:SITE.subModulos}</p>
+  </div>
+  <div class="htabs" role="tablist">
+    <button class="htab" role="tab" aria-selected="${tab==="mods"}" id="hMods">Módulos <span class="cnt">${MODS.length}</span></button>
+    <button class="htab" role="tab" aria-selected="${tab==="games"}" id="hGames">Joguinhos <span class="cnt">${JOGOS.length}</span></button>
+  </div>
+  ${tab==="games"?games:mods}`;
+  document.getElementById("hMods").addEventListener("click",()=>home("mods"));
+  document.getElementById("hGames").addEventListener("click",()=>home("games"));
+  root.querySelectorAll(".mod[data-id]").forEach(b=>b.addEventListener("click",()=>openMod(b.dataset.id,"study")));
+  root.querySelectorAll(".mod[data-g]").forEach(b=>b.addEventListener("click",()=>openGame(b.dataset.g)));
+  window.scrollTo({top:0});
+}
+
+/* =============== MÓDULOS: explicação + quiz =============== */
+function header(m,tab){
+  return `<button class="back" id="back">← Todos os módulos</button>
+  <h1 style="font-size:clamp(1.8rem,7vw,2.5rem)">${m.title}</h1>
+  ${pacPlate()}
+  <p class="sub" style="margin-bottom:0">${m.pages}</p>
+  <div class="tabs" role="tablist">
+    <button class="tab" role="tab" aria-selected="${tab==="study"}" id="tStudy">Estudar</button>
+    <button class="tab" role="tab" aria-selected="${tab==="quiz"}" id="tQuiz">Quiz (${m.quiz.length})</button>
+  </div>`;
+}
+function wireHeader(m){
+  document.getElementById("back").addEventListener("click",()=>home("mods"));
+  document.getElementById("tStudy").addEventListener("click",()=>openMod(m.id,"study"));
+  document.getElementById("tQuiz").addEventListener("click",()=>openMod(m.id,"quiz"));
+}
+function openMod(id,tab){
+  root.classList.remove("wide");
+  const m = MODS.find(x=>x.id===id);
+  if(tab==="study"){
+    state={view:"study",m};
+    root.innerHTML = header(m,"study") + `<div class="panel study">${m.study}</div>
+      <button class="btn" id="go">Fazer o quiz deste módulo</button>`;
+    wireHeader(m);
+    document.getElementById("go").addEventListener("click",()=>openMod(id,"quiz"));
+    window.scrollTo({top:0});
+  } else {
+    const qs = shuffle(m.quiz).map(q=>{
+      const opts = shuffle(q.o.map((t,k)=>({t,right:k===0})));
+      return {...q, opts, a:opts.findIndex(o=>o.right)};
+    });
+    state={view:"quiz",m,qs,i:0,ans:[]};
+    renderQ();
+  }
+}
+function bar(){
+  const {qs,i,ans}=state;
+  return `<div class="progress" aria-hidden="true">${qs.map((q,k)=>{
+    const c = ans[k]===undefined ? (k===i?"now":"") : (ans[k]===q.a?"ok":"bad");
+    return `<span class="${c}"></span>`;}).join("")}</div>`;
+}
+function renderQ(){
+  const {m,qs,i}=state, q=qs[i];
+  root.innerHTML = header(m,"quiz") + `<div class="panel" aria-live="polite">
+    ${bar()}
+    <span class="qnum">Questão ${i+1} de ${qs.length}</span>${q.ref?`<span class="book"><i class='ib'></i> Apostila, ${q.ref}</span>`:""}
+    ${q.ex?`<p class="excerpt">${q.ex}</p>`:""}
+    <p class="q">${q.q}</p>
+    <div class="opts">${q.opts.map((o,k)=>`<button class="opt" data-k="${k}"><span class="l">${L[k]})</span><span>${o.t}</span></button>`).join("")}</div>
+    <div id="fb"></div></div>`;
+  wireHeader(m);
+  root.querySelectorAll(".opt").forEach(b=>b.addEventListener("click",()=>choose(+b.dataset.k)));
+  window.scrollTo({top:0});
+}
+function choose(k){
+  const {qs,i}=state, q=qs[i];
+  state.ans[i]=k;
+  root.querySelectorAll(".opt").forEach((b,j)=>{
+    b.disabled=true;
+    if(j===q.a) b.classList.add("right"); else if(j===k) b.classList.add("wrong");
+  });
+  root.querySelector(".progress").outerHTML = bar();
+  const ok = k===q.a, last = i===qs.length-1;
+  document.getElementById("fb").innerHTML =
+    `<div class="balloon ${ok?"ok":"bad"}"><span class="tag">${ok?"Acertou!":"Quase!"}</span>${q.e}</div>
+     <button class="btn" id="nx">${last?"Ver meu resultado":"Próxima questão"}</button>`;
+  const nx=document.getElementById("nx");
+  nx.addEventListener("click",()=>{ if(last) finish(); else { state.i++; renderQ(); } });
+  nx.focus({preventScroll:true});
+  nx.scrollIntoView({behavior:"smooth",block:"nearest"});
+}
+function finish(){
+  const {m,qs,ans}=state, T=qs.length;
+  const n = qs.filter((q,k)=>ans[k]===q.a).length;
+  setBest(m.id,n);
+  const msg = n===T?"Nota máxima! Mandou muito bem.":n>=T*0.8?"Muito bom! Revise só as que errou.":n>=T*0.5?"Na média. Releia a explicação e tente de novo.":"Bora reler a explicação e tentar outra vez.";
+  const wrong = qs.filter((q,k)=>ans[k]!==q.a);
+  root.innerHTML = header(m,"quiz") + `<div class="panel">
+    <span class="qnum">Resultado</span>
+    <div class="score">${n}/${T}</div>
+    <p class="q">${msg}</p>
+    ${wrong.length?`<p style="margin:0;font-weight:800">Para revisar:</p><div class="review">${wrong.map(q=>`<div>${q.ex?`<em>${q.ex}</em><br>`:""}${q.q}<br><strong>Resposta: ${q.opts[q.a].t}</strong>${q.ref?`<br><i class='ib'></i> ${q.ref}`:""}</div>`).join("")}</div>`:""}
+    <button class="btn" id="again">Refazer (questões embaralhadas)</button>
+    <button class="btn alt" id="study">Voltar para a explicação</button>
+  </div>`;
+  wireHeader(m);
+  document.getElementById("again").addEventListener("click",()=>openMod(m.id,"quiz"));
+  document.getElementById("study").addEventListener("click",()=>openMod(m.id,"study"));
+  window.scrollTo({top:0});
+}
+
+home();
+
+</script>
+</body>
+</html>
